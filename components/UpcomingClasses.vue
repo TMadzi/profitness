@@ -1,6 +1,6 @@
 <template>
     <section class="grid grid-cols-12">
-        <div class="col-span-3 px-4 flex place-items-center py-2 bg-purple-500 h-32">
+        <div class="col-span-3 px-4 flex place-items-center py-2 bg-primary h-32">
             <h4 class="text-white text-xl uppercase font-medium">Upcoming classes</h4>
         </div>
         <div class="col-span-3 px-4 py-2 flex flex-col place-content-center bg-gray-100 h-32 group hover:(cursor-pointer bg-purple-500)">

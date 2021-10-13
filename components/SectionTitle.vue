@@ -1,5 +1,5 @@
 <template>
-    <h1 class="px-32 uppercase font-black pt-16 pb-8 text-6xl" :class="{size, color2}">
+    <h1 class="px-32 uppercase font-black pt-16 pb-8 text-6xl" :class="color2" >
         {{text1}} <span :class="color1">{{text2}}</span>
     </h1>
 </template>
