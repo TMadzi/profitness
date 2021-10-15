@@ -2,10 +2,26 @@
   <div>
   <PageHeader height="h-home-img" img="https://www.samlevysvillage.com/wp-content/uploads/2015/09/Pro-fitness-Health-Club-1.jpg"/>
   <UpcomingClasses/>
-  <SectionTitle text1="Pro Fitness" text2="Health Club"  size="text-4xl" color2="text-primary" color1="text-gray-700" />
-  <MainText text1="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!" />
-  <SectionTitle text1="Our" text2="Facilities"  size="text-4xl" color1="text-primary" color2="text-gray-700" />
-  <FacilitiesGrid/>
+  <SectionTitle class="mt-8" text1="Pro Fitness" text2="Health Club"  size="text-4xl" color2="text-primary" color1="text-gray-700" />
+  <div class="grid grid-cols-12 px-32">
+    <MainText class="col-span-6 pt-12"
+        text1="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
+        text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
+      />
+   <div class="col-span-6 pt-24">
+     <div class="grid grid-cols-1 md:grid-cols-2 relative hidden md:block" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427425/Pro%20Fitness/_SAM2431_v7xo6p.jpg" alt="Sunset in the mountains" class="feature-img" data-v-0fa6ba11=""> 
+     <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633426863/Pro%20Fitness/_SAM2563_ogg2r5.jpg" alt="Sunset in the mountains" class="feature-img-over" data-v-0fa6ba11="">
+     <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427081/Pro%20Fitness/_SAM2436_rdzncw.jpg" alt="Sunset in the mountains" class="feature-img-right" data-v-0fa6ba11="">
+     </div>
+   </div>
+  </div>
+  <SectionTitle class="mt-16" text1="Our" text2="Facilities"  size="text-4xl" color1="text-primary" color2="text-gray-700" />
+   <MainText class="px-32 pt-4 pb-12"
+    text1="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
+    text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
+   />
+  <FacilitiesGrid class="mb-16"/>
+  <Pricing />
   
   </div>
 </template>
@@ -15,3 +31,36 @@ import Vue from 'vue'
 
 export default Vue.extend({})
 </script>
+<style scoped>
+body{
+  background: #F8F8F8;
+}
+  .feature-img{
+    width:450px;
+  }
+  .feature-img-l{
+    width:500px;
+  }
+  .feature-img-over{
+    padding: 10px;
+    width:250px;
+    background: white;
+    position: absolute;
+    top: 260px;
+    left: 50px;
+  }
+
+    .feature-img-right{
+    padding: 10px;
+    width:300px;
+    background: white;
+    position: absolute;
+    top: -120px;
+    right: 20px;
+  }
+
+  .full-btn{
+    width:100%;
+  }
+</style>
+

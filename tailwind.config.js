@@ -5,11 +5,12 @@ module.exports = {
         'coming-bg': "url('/banner03.jpg')"
       },
       height: {
-       'home-img': '48rem',
+       'home-img': '40rem',
        'small-img': '32rem'
       },
       colors: {
-        primary: '#8d3ea4'
+        primary: '#8d3ea4',
+        accent: '#8cc640'
       }
     }
   }
