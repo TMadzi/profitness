@@ -1,6 +1,8 @@
 <template>
-  <nav
-    class="flex fixed  flex-direction-row top-0 w-full items-center justify-between px-28 h-16 bg-white text-gray-700 z-10 shadow-xl"
+<div>
+  <TopBanner/>
+    <nav
+    class="flex fixed  flex-direction-row top-10 w-full items-center justify-between px-28 h-16 bg-white text-gray-700 z-10 shadow-xl"
   >
     <div class="flex flex-row  gap-x-4  items-center">
       <nuxt-link to="/" class="h-24 mt-16 bg-white rounded-full">
@@ -72,12 +74,10 @@
           <vsa-heading>Classes</vsa-heading>
           <vsa-content>
             <div class="text-lg text-baseBlue">
-            <n-link to="/" class="block py-4 ">All Men</n-link>
-            <n-link to="/" class="block py-4">Tops</n-link>
-            <n-link to="/" class="block py-4">Bottoms</n-link>
-            <n-link to="/" class="block py-4">Shorts</n-link>
-            <n-link to="/" class="block py-4">Skirts</n-link>
-            <n-link to="/" class="block py-4">Shoes</n-link>
+            <n-link to="/classes#schedule" class="block py-4 ">Schedule</n-link>
+            <n-link to="/" class="block py-4 ">Aerobics</n-link>
+            <n-link to="/" class="block py-4">Spin</n-link>
+            <n-link to="/" class="block py-4">Pilates</n-link>
             </div>
           </vsa-content>
         </vsa-item>
@@ -89,6 +89,8 @@
       </div>
     </aside>
   </nav>
+</div>
+
 </template>
 <script>
 import {

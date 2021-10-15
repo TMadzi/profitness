@@ -86,20 +86,20 @@
         <tr>
       <td class="text-center py-8 text-gray-700 font-bold">17:30PM</td>
       <td class="text-center py-8 text-gray-700 flex-col gap-2 justify-center">
-          <p class="font-bold uppercase">KOSTA</p>
-          <p>Boot Camp</p>
+          <p class="font-bold uppercase">LIB</p>
+          <p>Spin</p>
       </td>
             <td class="text-center py-8 text-gray-700 flex-col gap-2 justify-center">
-          <p class="font-bold uppercase">KOSTA</p>
-          <p>Boot Camp</p>
+          <p class="font-bold uppercase">MUGOVE</p>
+          <p>Fitness Fusion</p>
       </td>
             <td class="text-center py-8 text-gray-700 flex-col gap-2 justify-center">
-          <p class="font-bold uppercase">KOSTA</p>
-          <p>Boot Camp</p>
+          <p class="font-bold uppercase">SHAYNE</p>
+          <p>Strong Nation</p>
       </td>
       <td class="text-center py-8 text-gray-700 flex-col gap-2 justify-center">
-          <p class="font-bold uppercase">KOSTA</p>
-          <p>Boot Camp</p>
+          <p class="font-bold uppercase">LAWSON</p>
+          <p>Taebo</p>
       </td>
        <td></td>
        <td></td>
