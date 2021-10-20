@@ -1,5 +1,5 @@
 <template>
-    <div class="px-32 mt-8 grid grid-cols-12 gap-8">
+    <div class="mt-8 grid grid-cols-12 px-4  lg:(px-32 gap-8)">
         <PersonImage
             v-for="item in data"
             :key="item.id"

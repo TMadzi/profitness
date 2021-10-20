@@ -1,5 +1,5 @@
 <template>
-    <section class="grid grid-cols-12 px-32 py-4">
+    <section class="grid grid-cols-12 px-4 py-4 lg:(px-32)">
         <FacilityGridItem 
             v-for="fac in facilities"
             :key="fac.facilityName"

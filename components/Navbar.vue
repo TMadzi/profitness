@@ -2,7 +2,7 @@
 <div>
   <TopBanner/>
     <nav
-    class="flex fixed  flex-direction-row top-10 w-full items-center justify-between px-28 h-16 bg-white text-gray-700 z-10 shadow-xl"
+    class="flex fixed  flex-direction-row top-10 w-full items-center justify-between px-4 h-16 bg-white text-gray-700 z-10 shadow-xl md:(px-8) lg:(px-28)"
   >
     <div class="flex flex-row  gap-x-4  items-center">
       <nuxt-link to="/" class="h-24 mt-16 bg-white rounded-full">
