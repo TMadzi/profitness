@@ -28,9 +28,9 @@
         text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
       />
    <div class="col-span-6 pt-24">
-     <div class="grid grid-cols-1 md:grid-cols-2 relative hidden md:block" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427114/Pro%20Fitness/_SAM2428_bkzqbp.jpg" alt="Sunset in the mountains" class="feature-img" data-v-0fa6ba11=""> 
-     <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427329/Pro%20Fitness/_SAM2536_vgz0ub.jpg" alt="Sunset in the mountains" class="feature-img-over" data-v-0fa6ba11="">
-     <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427113/Pro%20Fitness/_SAM2513_cmdywx.jpg" alt="Sunset in the mountains" class="feature-img-right" data-v-0fa6ba11="">
+     <div class="grid grid-cols-1 md:grid-cols-2 relative hidden md:block" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427081/Pro%20Fitness/_SAM2436_rdzncw.jpg" alt="Sunset in the mountains" class="feature-img" data-v-0fa6ba11=""> 
+     <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427056/Pro%20Fitness/_SAM2516_cbyqox.jpg" alt="Sunset in the mountains" class="cardio-img-over" data-v-0fa6ba11="">
+     <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633426709/Pro%20Fitness/292323_10150972309757226_650913718_n_nijuy5.jpg" alt="Sunset in the mountains" class="cardio-img-right" data-v-0fa6ba11="">
      </div>
    </div>
   </div>
@@ -42,9 +42,8 @@
         text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
       />
    <div class="col-span-6 pt-24">
-     <div class="grid grid-cols-1 md:grid-cols-2 relative hidden md:block" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427114/Pro%20Fitness/_SAM2428_bkzqbp.jpg" alt="Sunset in the mountains" class="feature-img" data-v-0fa6ba11=""> 
-     <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427329/Pro%20Fitness/_SAM2536_vgz0ub.jpg" alt="Sunset in the mountains" class="feature-img-over" data-v-0fa6ba11="">
-     <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427113/Pro%20Fitness/_SAM2513_cmdywx.jpg" alt="Sunset in the mountains" class="feature-img-right" data-v-0fa6ba11="">
+     <div class="grid grid-cols-1 md:grid-cols-2 relative hidden md:block" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427001/Pro%20Fitness/_SAM2415_jiencj.jpg" alt="Sunset in the mountains" class="feature-img" data-v-0fa6ba11=""> 
+     <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427387/Pro%20Fitness/_SAM2480_w7owsj.jpg" alt="Sunset in the mountains" class="feature-img-over" data-v-0fa6ba11="">
      </div>
    </div>
   </div>
@@ -56,9 +55,8 @@
         text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
       />
    <div class="col-span-6 pt-24">
-     <div class="grid grid-cols-1 md:grid-cols-2 relative hidden md:block" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427114/Pro%20Fitness/_SAM2428_bkzqbp.jpg" alt="Sunset in the mountains" class="feature-img" data-v-0fa6ba11=""> 
-     <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427329/Pro%20Fitness/_SAM2536_vgz0ub.jpg" alt="Sunset in the mountains" class="feature-img-over" data-v-0fa6ba11="">
-     <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427113/Pro%20Fitness/_SAM2513_cmdywx.jpg" alt="Sunset in the mountains" class="feature-img-right" data-v-0fa6ba11="">
+     <div class="grid grid-cols-1 md:grid-cols-2 relative" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427031/Pro%20Fitness/_SAM2460_pkvuvr.jpg" alt="Sunset in the mountains" class="sauna-1 col-span-1" data-v-0fa6ba11=""> 
+     <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633426981/Pro%20Fitness/_SAM2448_ntud7u.jpg" alt="Sunset in the mountains" class="sauna-2 col-span-1" data-v-0fa6ba11="">
      </div>
    </div>
   </div>
@@ -90,6 +88,37 @@ body{
     position: absolute;
     top: -70px;
     left: -20px;
+  }
+
+    .cardio-img-over{
+    padding: 5px;
+    width:150px;
+    background: white;
+    position: absolute;
+    bottom: -80px;
+    left: -30px;
+  }
+
+    .cardio-img-right{
+    padding: 5px;
+    width:200px;
+    background: white;
+    position: absolute;
+    top: -70px;
+    right: 30px;
+  }
+
+      .sauna-1{
+    padding: 5px;
+    width:200px;
+    background: white;
+    margin-top: -40px;
+  }
+
+    .sauna-2{
+    padding: 5px;
+    width:200px;
+    background: white;
   }
 
   .full-btn{

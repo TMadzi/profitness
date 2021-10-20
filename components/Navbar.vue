@@ -56,13 +56,13 @@
         class="flex w-full items-center p-10"
       >
       </span>
-      <nuxt-link class="p-4 flex font-bold text-xl text-primary" to="/">Home</nuxt-link>
-      <nuxt-link class="p-4 flex font-bold text-xl text-primary" to="/trainers">Trainers</nuxt-link>
+      <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-300 hover:(bg-primary text-white)" to="/">Home</nuxt-link>
+      <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-300 hover:(bg-primary text-white)" to="/trainers">Trainers</nuxt-link>
  <vsa-list class="">
         <vsa-item>
-          <vsa-heading>Facilities</vsa-heading>
+          <vsa-heading >Facilities</vsa-heading>
           <vsa-content>
-            <div class="text-lg font-medium text-baseBlue">
+            <div class="text-lg font-medium text-gray-500">
             <n-link to="/facilities" class="block py-4">Weight Training</n-link>
             <n-link to="/" class="block py-4">Cardio Training</n-link>
             <n-link to="/" class="block py-4">Functional Training</n-link>
@@ -73,7 +73,7 @@
         <vsa-item>
           <vsa-heading>Classes</vsa-heading>
           <vsa-content>
-            <div class="text-lg text-baseBlue">
+            <div class="text-lg text-gray-500">
             <n-link to="/classes#schedule" class="block py-4 ">Schedule</n-link>
             <n-link to="/" class="block py-4 ">Aerobics</n-link>
             <n-link to="/" class="block py-4">Spin</n-link>
@@ -82,8 +82,8 @@
           </vsa-content>
         </vsa-item>
       </vsa-list>
-            <nuxt-link class="p-4 flex font-bold text-xl text-primary" to="/staff">Staff</nuxt-link>
-                  <nuxt-link class="p-4 flex font-bold text-xl text-primary" to="/">Contact Us</nuxt-link>
+            <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-150 hover:(bg-primary text-white)" to="/staff">Staff</nuxt-link>
+            <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-150 hover:(bg-primary text-white)" to="/">Contact Us</nuxt-link>
       <div class="fixed bottom-0 w-full">
 
       </div>
@@ -163,7 +163,10 @@ export default {
 .vsa-item__trigger:focus, .vsa-item__trigger:active .vsa-item__trigger:hover, .vsa-item__trigger__content:active {
     outline: none;
     @apply bg-primary;
-    color: white;
+}
+
+.vsa-item__trigger:hover + .vsa-item__trigger__content {
+    color: white !important
 }
 .vsa-item--is-active .vsa-item__heading, .vsa-item:not(:last-of-type) {
     border-bottom: #8d3ea4;

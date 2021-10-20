@@ -6,3 +6,21 @@
 .page-leave-active {
   opacity: 0;
 }
+
+.vsa-list{
+  --vsa-max-width: 720px;
+--vsa-min-width: 300px;
+--vsa-text-color: #6B7280 !important;
+--vsa-highlight-color: #8d3ea4!important;
+--vsa-bg-color: rgba(255, 255, 255, 1);
+--vsa-border-color: rgba(0, 0, 0, 0.2);
+--vsa-border-width: 1px;
+--vsa-border-style: solid;
+--vsa-heading-padding: 1rem 1rem;
+--vsa-content-padding: 1rem 1rem;
+--vsa-default-icon-size: 1;
+}
+
+.vsa-list:hover{
+
+}
