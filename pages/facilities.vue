@@ -55,8 +55,8 @@
         text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
       />
    <div class="col-span-6 pt-24">
-     <div class="grid grid-cols-1 md:grid-cols-2 relative" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427031/Pro%20Fitness/_SAM2460_pkvuvr.jpg" alt="Sunset in the mountains" class="sauna-1 col-span-1" data-v-0fa6ba11=""> 
-     <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633426981/Pro%20Fitness/_SAM2448_ntud7u.jpg" alt="Sunset in the mountains" class="sauna-2 col-span-1" data-v-0fa6ba11="">
+     <div class="grid grid-cols-1 md:grid-cols-2 relative" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633427031/Pro%20Fitness/_SAM2460_pkvuvr.jpg" alt="Sunset in the mountains" class="sauna-1 col-span-1" data-v-0fa6ba11=""> 
+     <img src="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_600/v1633426981/Pro%20Fitness/_SAM2448_ntud7u.jpg" alt="Sunset in the mountains" class="sauna-2 col-span-1" data-v-0fa6ba11="">
      </div>
    </div>
   </div>

@@ -2,9 +2,6 @@
     <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="bg-coming-bg bg-cover bg-fixed">
   <div class="h-full bg-black bg-opacity-50">
-    <!-- Overlapping background -->
-    <div aria-hidden="true" class="hidden absolute bg-gray-50 w-full h-6 bottom-0 lg:block"></div>
-
   <SectionTitle class="mt-16" text1="Rate" text2="Card"  size="text-4xl" color2="text-primary" color1="text-gray-100" />
 
     <h2 class="sr-only">Rates</h2>

@@ -111,6 +111,7 @@
 </template>
 <style scoped>
 td{
-    @apply border-1 border-white;
+    @apply border-1;
+    @apply border-white;
 }
 </style>
