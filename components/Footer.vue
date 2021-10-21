@@ -4,9 +4,9 @@
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-      <div class="space-y-8 h-32 w-32 rounded-full bg-white xl:col-span-1">
-        <img class="h-32 " src="https://res.cloudinary.com/defmmlrqg/image/upload/v1634132894/Pro%20Fitness/pro-fitness-logo_2_xjv965-removebg-preview_uufppn.png" alt="Company name">
-        <div class="flex space-x-6">
+      <div class="mx-auto h-24 w-24 space-y-8 rounded-full bg-white lg:(h-32 w-32) xl:col-span-1">
+        <img class=" h-24 lg:(h-32) " src="https://res.cloudinary.com/defmmlrqg/image/upload/v1634132894/Pro%20Fitness/pro-fitness-logo_2_xjv965-removebg-preview_uufppn.png" alt="Company name">
+        <div class="flex space-x-6 justify-center">
           <nuxt-link to="/" class="text-gray-200 hover:text-gray-300">
             <span class="sr-only">Facebook</span>
             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -22,7 +22,7 @@
           </nuxt-link>
         </div>
       </div>
-      <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+      <div class="mt-24 grid grid-cols-2 gap-8 lg:(mt-12) xl:mt-0 xl:col-span-2">
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
             <h3 class="text-md font-semibold text-gray-200 tracking-wider uppercase">

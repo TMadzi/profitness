@@ -2,11 +2,11 @@
 <div>
   <TopBanner/>
     <nav
-    class="flex fixed  flex-direction-row top-10 w-full items-center justify-between px-4 h-16 bg-white text-gray-700 z-10 shadow-xl md:(px-8) lg:(px-28)"
+    class="flex fixed flex-direction-row  top-0  w-full items-center justify-between px-4 h-16 bg-white text-gray-700 z-10 shadow-xl md:(px-8 top-10) lg:(px-28)"
   >
     <div class="flex flex-row  gap-x-4  items-center">
-      <nuxt-link to="/" class="h-24 mt-16 bg-white rounded-full">
-<img class="h-24  " src="https://res.cloudinary.com/defmmlrqg/image/upload/v1634132894/Pro%20Fitness/pro-fitness-logo_2_xjv965-removebg-preview_uufppn.png"/>
+      <nuxt-link to="/" class="h-12 bg-white rounded-full md:(h-24 mt-16) ">
+<img class=" h-12 md:(h-24)  " src="https://res.cloudinary.com/defmmlrqg/image/upload/v1634132894/Pro%20Fitness/pro-fitness-logo_2_xjv965-removebg-preview_uufppn.png"/>
       </nuxt-link >
       
       <img class="h-12 mt-4" src="https://res.cloudinary.com/defmmlrqg/image/upload/v1634133271/Pro%20Fitness/pro-fitness-logo_qraxhr.jpg"/>

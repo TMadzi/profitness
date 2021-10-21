@@ -1,6 +1,6 @@
 <template>
 <!-- FIXED IMAGE -->
-    <section class="bg-cover bg-fixed" :class="height" :style="{ backgroundImage: `url(${img})` }">
+    <section class="bg-contain bg-no-repeat bg-fixed md:(bg-cover)" :class="height" :style="{ backgroundImage: `url(${img})` }">
 
     </section>
 </template>

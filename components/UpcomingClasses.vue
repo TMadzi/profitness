@@ -1,19 +1,85 @@
 <template>
     <section class="grid grid-cols-12">
         <div class="col-span-12  text-center px-4 flex place-items-center py-2 bg-primary h-16 md:() lg:(col-span-3 text-left h-32)">
-            <h4 class="text-white text-xl uppercase font-medium">Upcoming classes</h4>
+            <h4 class="w-full text-white text-xl uppercase font-medium">Upcoming classes</h4>
         </div>
-        <div class="col-span-4 px-4 py-2 flex flex-col place-content-center bg-gray-100 h-32 group hover:(cursor-pointer bg-primary) lg:(col-span-3)">
-            <h4 class="font-medium text-md uppercase text-gray-600 transition duration-300 ease group-hover:(text-white ) md:(text-2xl)">ANNIHILATE</h4>
-            <h6 class="text-sm text-gray-500 group-hover:(text-white opacity-80) md:(text-lg)">08:00 - 09:00, Saturday</h6>
-        </div>
-        <div class="col-span-4 px-4 py-1 flex flex-col place-content-center bg-gray-100 h-32 group hover:(cursor-pointer bg-primary) lg:(col-span-3 py-2)">
-            <h4 class="font-medium uppercase text-gray-600 text-2xl  transition duration-300 ease group-hover:(text-white )">Spin</h4>
-            <h6 class="text-lg text-gray-500 group-hover:(text-white opacity-80)">09:00 - 10:00, Saturday</h6>
-        </div>
-        <div class="col-span-4 px-4 py-2 flex flex-col place-content-center bg-gray-100 h-32 group hover:(cursor-pointer bg-primary) lg:(col-span-3)">
-            <h4 class="font-medium uppercase text-gray-600 text-2xl  transition duration-300 ease group-hover:(text-white )">X-Train</h4>
-            <h6 class="text-lg text-gray-500 group-hover:(text-white opacity-80)">09:00 - 10:00, Saturday</h6>
-        </div>
+            <UpcomingClass
+                v-for="eClass in shownClasses.slice(0,3)"
+                :key="eClass.id"
+                :className="eClass.className"
+                :day="eClass.day"
+                :startTime="eClass.startTime"
+                :endTime="eClass.endTime"
+                :link="eClass.link"
+            />
     </section>
 </template>
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+    data(){
+        const upcomingClasses = [
+            {
+                id: 1,
+                className: "Annihilate",
+                day: "Wednesday",
+                startTime: "09:00",
+                endTime: "10:00",
+                link: "/classes/#annihilate"
+            },
+            {
+                id: 2,
+                className: "Storo",
+                day: "Friday",
+                startTime: "17:00",
+                endTime: "18:00",
+                link: "/classes/#annihilate"
+            },
+            {
+                id: 3,
+                className: "Power Run",
+                day: "Saturday",
+                startTime: "09:00",
+                endTime: "10:00",
+                link: "/classes/#annihilate"
+            },
+            {
+                id: 4,
+                className: "Annihilate",
+                day: "Wednesday",
+                startTime: "09:00",
+                endTime: "10:00",
+                link: "/classes/#annihilate"
+            },
+            {
+                id: 5,
+                className: "Storo",
+                day: "Friday",
+                startTime: "17:00",
+                endTime: "18:00",
+                link: "/classes/#annihilate"
+            },
+            {
+                id: 6,
+                className: "Power Run",
+                day: "Saturday",
+                startTime: "09:00",
+                endTime: "10:00",
+                link: "/classes/#annihilate"
+            },
+        ]
+
+        const date = new Date()
+        const daysArray = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+        const today = date.getDay()
+        const time = date.getHours()
+        const shownClasses = upcomingClasses.filter(x=> daysArray.indexOf(x.day) >= today)
+                return {
+                    shownClasses,
+                    upcomingClasses,
+                    today,
+                    time
+            }
+    }
+})
+</script>
