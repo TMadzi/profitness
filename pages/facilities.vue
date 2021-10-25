@@ -1,15 +1,15 @@
 <template>
     <div>
-        <PageHeader class="bg-top" height="h-small-img" pos="bg-top" img="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633427081/Pro%20Fitness/_SAM2436_rdzncw.jpg"/>
+        <PageHeader class="bg-top" height="h-64 lg:(h-small-img)"  pos="bg-top" img="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_1800/v1633427081/Pro%20Fitness/_SAM2436_rdzncw.jpg"/>
               <SectionTitle class="mt-4" text1="Our" text2="Facilities"  size="text-4xl" color2="text-primary" color1="text-gray-700" />
-         <MainText class="col-span-6 pt-4 px-32"
+         <MainText class="col-span-12 pt-4 pb-4 px-4 md:(px-10) lg:(col-span-6 pt-4 px-32)"
     text1="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
     text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
    />
      <SectionTitle id="weights" class="mt-8" text1="Weight" text2="Training"  size="text-4xl" color1="text-primary" color2="text-gray-700" />
   
-     <div class="grid grid-cols-12 px-32">
-    <MainText class="col-span-6 pt-12"
+     <div class="grid grid-cols-12 px-4 md:(px-10) lg:(px-32)">
+    <MainText class="col-span-12 pt-4 pb-12 lg:(col-span-6 pt-4)"
         text1="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
         text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
       />
@@ -22,8 +22,8 @@
   </div>
      <SectionTitle id="cardio" class="mt-8" text1="Cardio" text2="Training"  size="text-4xl" color2="text-primary" color1="text-gray-700" />
   
-     <div class="grid grid-cols-12 px-32">
-    <MainText class="col-span-6 pt-12 order-2"
+     <div class="grid grid-cols-12 px-4 md:(px-10) lg:(px-32)">
+    <MainText class="col-span-12 pt-4 pb-12 lg:(col-span-6 pt-4)order-2"
         text1="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
         text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
       />
@@ -36,12 +36,12 @@
   </div>
    <SectionTitle id="functional" class="mt-8" text1="Functional" text2="Training"  size="text-4xl" color1="text-primary" color2="text-gray-700" />
   
-     <div class="grid grid-cols-12 px-32">
-    <MainText class="col-span-6 pt-12"
+     <div class="grid grid-cols-12 px-4 md:(px-10) lg:(px-32)">
+    <MainText class="col-span-12 pt-4 pb-12 px-4 lg:(col-span-6 pt-4)"
         text1="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
         text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
       />
-   <div class="col-span-6 pt-24">
+   <div class="col-span-6 pt-12">
      <div class="grid grid-cols-1 md:grid-cols-2 relative hidden md:block" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633427001/Pro%20Fitness/_SAM2415_jiencj.jpg" alt="Sunset in the mountains" class="feature-img" data-v-0fa6ba11=""> 
      <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427387/Pro%20Fitness/_SAM2480_w7owsj.jpg" alt="Sunset in the mountains" class="feature-img-over" data-v-0fa6ba11="">
      </div>
@@ -49,8 +49,8 @@
   </div>
      <SectionTitle id="steamsauna" class="mt-8" text1="Sauna &amp;" text2="Steam Room"  size="text-4xl" color2="text-primary" color1="text-gray-700" />
   
-     <div class="grid grid-cols-12 px-32">
-    <MainText class="col-span-6 pt-12 order-2"
+     <div class="grid grid-cols-12 px-4 md:(px-10) lg:(px-32)">
+    <MainText class="col-span-12 pt-4 pb-12 lg:(col-span-6 pt-4) order-2"
         text1="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
         text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
       />
