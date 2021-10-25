@@ -1,6 +1,6 @@
 <template>
     <div>
-        <PageHeader class="bg-top" height="h-small-img" pos="bg-top" img="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427081/Pro%20Fitness/_SAM2436_rdzncw.jpg"/>
+        <PageHeader class="bg-top" height="h-small-img" pos="bg-top" img="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633427081/Pro%20Fitness/_SAM2436_rdzncw.jpg"/>
               <SectionTitle class="mt-4" text1="Our" text2="Facilities"  size="text-4xl" color2="text-primary" color1="text-gray-700" />
          <MainText class="col-span-6 pt-4 px-32"
     text1="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
@@ -14,7 +14,7 @@
         text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
       />
    <div class="col-span-6 pt-24">
-     <div class="grid grid-cols-1 md:grid-cols-2 relative hidden md:block" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427114/Pro%20Fitness/_SAM2428_bkzqbp.jpg" alt="Sunset in the mountains" class="feature-img" data-v-0fa6ba11=""> 
+     <div class="grid grid-cols-1 md:grid-cols-2 relative hidden md:block" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633427114/Pro%20Fitness/_SAM2428_bkzqbp.jpg" alt="Sunset in the mountains" class="feature-img" data-v-0fa6ba11=""> 
      <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427329/Pro%20Fitness/_SAM2536_vgz0ub.jpg" alt="Sunset in the mountains" class="feature-img-over" data-v-0fa6ba11="">
      <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427113/Pro%20Fitness/_SAM2513_cmdywx.jpg" alt="Sunset in the mountains" class="feature-img-right" data-v-0fa6ba11="">
      </div>
@@ -28,7 +28,7 @@
         text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
       />
    <div class="col-span-6 pt-24">
-     <div class="grid grid-cols-1 md:grid-cols-2 relative hidden md:block" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427081/Pro%20Fitness/_SAM2436_rdzncw.jpg" alt="Sunset in the mountains" class="feature-img" data-v-0fa6ba11=""> 
+     <div class="grid grid-cols-1 md:grid-cols-2 relative hidden md:block" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633427081/Pro%20Fitness/_SAM2436_rdzncw.jpg" alt="Sunset in the mountains" class="feature-img" data-v-0fa6ba11=""> 
      <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427056/Pro%20Fitness/_SAM2516_cbyqox.jpg" alt="Sunset in the mountains" class="cardio-img-over" data-v-0fa6ba11="">
      <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633426709/Pro%20Fitness/292323_10150972309757226_650913718_n_nijuy5.jpg" alt="Sunset in the mountains" class="cardio-img-right" data-v-0fa6ba11="">
      </div>
@@ -42,7 +42,7 @@
         text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
       />
    <div class="col-span-6 pt-24">
-     <div class="grid grid-cols-1 md:grid-cols-2 relative hidden md:block" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427001/Pro%20Fitness/_SAM2415_jiencj.jpg" alt="Sunset in the mountains" class="feature-img" data-v-0fa6ba11=""> 
+     <div class="grid grid-cols-1 md:grid-cols-2 relative hidden md:block" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633427001/Pro%20Fitness/_SAM2415_jiencj.jpg" alt="Sunset in the mountains" class="feature-img" data-v-0fa6ba11=""> 
      <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427387/Pro%20Fitness/_SAM2480_w7owsj.jpg" alt="Sunset in the mountains" class="feature-img-over" data-v-0fa6ba11="">
      </div>
    </div>

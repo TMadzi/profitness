@@ -10,9 +10,9 @@
       />
    <div class="col-span-12 md:(col-span-6 pt-24)">
      <div class="grid grid-cols-1 md:grid-cols-2 relative md:block" data-v-0fa6ba11="">
-      <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427425/Pro%20Fitness/_SAM2431_v7xo6p.jpg" alt="Sunset in the mountains" class="feature-img" data-v-0fa6ba11=""> 
-      <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633426863/Pro%20Fitness/_SAM2563_ogg2r5.jpg" alt="Sunset in the mountains" class="lg:(p-2 w-64 bg-white absolute left-12 top-64)" data-v-0fa6ba11="">
-      <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427081/Pro%20Fitness/_SAM2436_rdzncw.jpg" alt="Sunset in the mountains" class="lg:(p-2 bg-white absolute w-72 right-5 -top-28)" data-v-0fa6ba11="">
+      <img src="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633427425/Pro%20Fitness/_SAM2431_v7xo6p.jpg" alt="Sunset in the mountains" class="feature-img" data-v-0fa6ba11=""> 
+      <img src="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633426863/Pro%20Fitness/_SAM2563_ogg2r5.jpg" alt="Sunset in the mountains" class="lg:(p-2 w-64 bg-white absolute left-12 top-64)" data-v-0fa6ba11="">
+      <img src="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633427081/Pro%20Fitness/_SAM2436_rdzncw.jpg" alt="Sunset in the mountains" class="lg:(p-2 bg-white absolute w-72 right-5 -top-28)" data-v-0fa6ba11="">
      </div>
    </div>
   </div>
