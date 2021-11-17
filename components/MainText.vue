@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col gap-y-4">
+    <div class="flex flex-col gap-y-2">
         <p class=" text-gray-700 text-md tracking-wider leading-loose">{{text1}}</p>
         <p class="text-gray-700 text-md tracking-wider leading-loose">{{text2}}</p>
     </div>

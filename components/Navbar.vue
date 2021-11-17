@@ -41,7 +41,7 @@
       </div>
     </transition>
     <aside
-      class="transform bg-white top-0 left-0 w-64 fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30"
+      class="transform bg-white top-0 z-50 left-0 w-64 fixed h-full overflow-auto ease-in-out transition-all duration-300"
       :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
     >
        <div class="flex flex-col  gap-x-4  items-center">
@@ -51,33 +51,18 @@
       
       <img class="h-12" src="https://res.cloudinary.com/defmmlrqg/image/upload/v1634133271/Pro%20Fitness/pro-fitness-logo_qraxhr.jpg"/>
     </div>
-      <span
-        @click="isOpen = false"
-        class="flex w-full items-center p-10"
-      >
-      </span>
-      <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-300 hover:(bg-primary text-white)" to="/">Home</nuxt-link>
+      <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-300 hover:(bg-primary text-white)" to="/" @click="isOpen = false">Home</nuxt-link>
       <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-300 hover:(bg-primary text-white)" to="/trainers">Trainers</nuxt-link>
+      <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-300 hover:(bg-primary text-white)" to="/classes">Classes</nuxt-link>
  <vsa-list class="">
         <vsa-item>
           <vsa-heading >Facilities</vsa-heading>
           <vsa-content>
             <div class="text-lg font-medium text-gray-500">
-            <n-link to="/facilities" class="block py-4">Weight Training</n-link>
-            <n-link to="/" class="block py-4">Cardio Training</n-link>
-            <n-link to="/" class="block py-4">Functional Training</n-link>
-            <n-link to="/" class="block py-4">Steam Room &amp; Sauna</n-link>
-            </div>
-          </vsa-content>
-        </vsa-item>
-        <vsa-item>
-          <vsa-heading>Classes</vsa-heading>
-          <vsa-content>
-            <div class="text-lg text-gray-500">
-            <n-link to="/classes#schedule" class="block py-4 ">Schedule</n-link>
-            <n-link to="/" class="block py-4 ">Aerobics</n-link>
-            <n-link to="/" class="block py-4">Spin</n-link>
-            <n-link to="/" class="block py-4">Pilates</n-link>
+            <n-link to="/facilities/weights" class="block py-4">Weight Training</n-link>
+            <n-link to="/facilities/cardio" class="block py-4">Cardio Training</n-link>
+            <n-link to="/facilities/functional" class="block py-4">Functional Training</n-link>
+            <n-link to="/facilities/steam-sauna" class="block py-4">Steam Room &amp; Sauna</n-link>
             </div>
           </vsa-content>
         </vsa-item>
@@ -165,7 +150,10 @@ export default {
     @apply bg-primary;
 }
 
-.vsa-item__trigger:hover + .vsa-item__trigger__content {
+.vsa-item__trigger:hover .vsa-item__trigger__content {
+    color: white !important
+}
+.vsa-item__trigger:focus .vsa-item__trigger__content {
     color: white !important
 }
 .vsa-item--is-active .vsa-item__heading, .vsa-item:not(:last-of-type) {

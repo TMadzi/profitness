@@ -1,10 +1,13 @@
 <template>
-    <div>
+    <div class="pb-16">
+        <div class="relative">
         <PageHeader class="bg-top" height="h-small-img" pos="bg-top" img="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_1800/v1633426850/Pro%20Fitness/_SAM2568_2_xi6obn.jpg"/>
-          <SectionTitle class="mt-4" text1="Personal" text2="Trainers"  size="text-4xl" color2="text-primary" color1="text-gray-700" />
-         <MainText class="col-span-12 px-4 lg:(col-span-6 pt-4 px-32)"
-    text1="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
-    text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
+             <div class="bg-black absolute top-0 opacity-60 w-full h-full"></div>
+            <h1 class="text-white flex justify-end leading-44  absolute bottom-0 text-center font-bold text-banner tracking-wide w-full px-16">TRAINERS</h1>
+        </div>
+         <MainText class="col-span-12 px-4 lg:(col-span-6 pt-12 px-32)"
+    text1="A personal trainer is a health professional that can help you in all aspects of your fitness and exercise. Our personal trainers are equipped to help you in all phases of your fitness journey; from a novice first entering the gym, to an advanced athlete getting ready to perform at the highest level."
+    text2="If you would like to have a persoanl trainer, please enquire at our front desk or approach the trainer directly and let your fitness journey begin!"
    />
    <StaffGrid :data="trainers" />
     </div>
@@ -16,28 +19,45 @@ export default Vue.extend({
         const trainers = [
             {
                 name: "Danisa",
-                img: "https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633427113/Pro%20Fitness/_SAM2513_cmdywx.jpg"
+                img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528304/Pro%20Fitness/staff/photo_2021-11-03_08-35-18-removebg-preview_pq6ykf.png"
             },
                         {
                 name: "Anton",
-                img: "https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633613063/Pro%20Fitness/munya_bq9fd1.png"
+                img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1635361852/Pro%20Fitness/trainer/IMG-20211025-WA0028-removebg-preview_thrns4.png"
+            },
+                        {
+                name: "Michelle",
+                img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528307/Pro%20Fitness/staff/photo_2021-11-03_08-33-46-removebg-preview_nu8wji.png"
             },
                         {
                 name: "Irvine",
-                img: "https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633440207/Pro%20Fitness/irv-removebg-preview_gjc7fi.png"
+                img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528306/Pro%20Fitness/staff/photo_2021-11-03_08-34-26-removebg-preview_mtewct.png"
+            },
+                                    {
+                name: "Sheraine",
+                img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528304/Pro%20Fitness/staff/photo_2021-11-03_08-35-04-removebg-preview_hn9nrp.png"
+            },
+                                    {
+                name: "Paul",
+                img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528306/Pro%20Fitness/staff/photo_2021-11-03_08-34-22-removebg-preview_fiy5d7.png"
             },
                         {
                 name: "Zu",
-                img: "https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633440052/Pro%20Fitness/Zu-removebg-preview_aghlxu.png"
+                img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528306/Pro%20Fitness/staff/photo_2021-11-03_08-34-29-removebg-preview_r3bnch.png"
             },
                         {
                 name: "Shayle",
-                img: "https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633439922/Pro%20Fitness/girl-removebg-preview_q2d44z.png"
+                img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528304/Pro%20Fitness/staff/photo_2021-11-03_08-35-11-removebg-preview_at0n11.png"
             },
-                        {
-                name: "Kosta",
-                img: "https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633441179/Pro%20Fitness/kosta-removebg-preview_f7jtgj.png"
-            }
+                                    {
+                name: "Mugo",
+                img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528304/Pro%20Fitness/staff/photo_2021-11-03_08-35-07-removebg-preview_notjkc.png"
+            },
+                                    {
+                name: "Dagmawi",
+                img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528307/Pro%20Fitness/staff/photo_2021-11-03_08-34-11-removebg-preview_aabfvn.png"
+            },
+
         ]
                 return {
                 trainers

@@ -1,7 +1,7 @@
 <template>
     <section class="grid grid-cols-12">
         <div class="col-span-12  text-center px-4 flex place-items-center py-2 bg-primary h-16 md:() lg:(col-span-3 text-left h-32)">
-            <h4 class="w-full text-white text-xl uppercase font-medium">Upcoming classes</h4>
+            <h4 class="w-full text-white text-3xl uppercase font-medium">Upcoming classes</h4>
         </div>
             <UpcomingClass
                 v-for="eClass in shownClasses.slice(0,3)"

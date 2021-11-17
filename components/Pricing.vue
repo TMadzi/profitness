@@ -6,7 +6,7 @@
 
     <h2 class="sr-only">Rates</h2>
     <!-- Cards -->
-    <div class="relative mt-8 max-w-2xl mx-auto px-4 pb-24 sm:mt-12 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="relative mt-8 max-w-2xl mx-auto px-4 pb-16 sm:mt-12 sm:px-6 lg:max-w-7xl lg:px-8">
       <!-- Decorative background -->
       <div aria-hidden="true" class="hidden absolute top-4 bottom-6 left-8 right-8 inset-0 rounded-tl-lg rounded-tr-lg lg:block"></div>
 
@@ -23,6 +23,9 @@
         />
       </div>
     </div>
+       <section class="text-center pb-16">
+      <nuxt-link to="/classes" class="py-2 w-24 mt-8 px-4 text-md bg-white  uppercase text-primary font-bold border-primary ">All rates</nuxt-link>  
+   </section>
   </div>
 </div>
 </template>

@@ -1,8 +1,11 @@
 <template>
     <div>
-        <PageHeader class="bg-top" height="h-64 lg:(h-small-img)"  pos="bg-top" img="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_1800/v1633427081/Pro%20Fitness/_SAM2436_rdzncw.jpg"/>
-              <SectionTitle class="mt-4" text1="Our" text2="Facilities"  size="text-4xl" color2="text-primary" color1="text-gray-700" />
-         <MainText class="col-span-12 pt-4 pb-4 px-4 md:(px-10) lg:(col-span-6 pt-4 px-32)"
+      <div class="relative">
+        <PageHeader class="bg-top" height="h-64 lg:(h-small-img)"  pos="bg-top" img="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_1600/v1633426845/Pro%20Fitness/_SAM2462_em1x7l.jpg"/>
+        <div class="bg-black absolute top-0 opacity-60 w-full h-full"></div>
+        <h1 class="text-white flex  align-bottom justify-center  leading-32 absolute bottom-0 text-center font-bold text-sauna tracking-wide w-full px-16">STEAM ROOM &AMP; SAUNA</h1>
+        </div>
+         <MainText class="col-span-12 pt-4 pb-4 px-4 md:(px-10) lg:(col-span-6 pt-12 px-32)"
     text1="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
     text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
    />
@@ -23,9 +26,9 @@
      <SectionTitle id="cardio" class="mt-8" text1="Cardio" text2="Training"  size="text-4xl" color2="text-primary" color1="text-gray-700" />
   
      <div class="grid grid-cols-12 px-4 md:(px-10) lg:(px-32)">
-    <MainText class="col-span-12 pt-4 pb-12 lg:(col-span-6 pt-4)order-2"
-        text1="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
-        text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
+    <MainText class="col-span-12 pt-4 pb-12 px-4 lg:(col-span-6 pt-4)order-2"
+        text1="Cardio training (also known as aerobic training) is exercise that is meant to activate large muscle groups and get your heart pumping. Some benefits of cardio include: reduced stress, lower blood pressure, improved heart health, weight regulation and many more."
+        text2="We have a variety of cardio machines ranging from treadmills and bikes to steppers and elyptical machines. This means that you will be able to find a form of exercise that suits your goals and experience."
       />
    <div class="col-span-6 pt-24">
      <div class="grid grid-cols-1 md:grid-cols-2 relative hidden md:block" data-v-0fa6ba11=""><img src="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633427081/Pro%20Fitness/_SAM2436_rdzncw.jpg" alt="Sunset in the mountains" class="feature-img" data-v-0fa6ba11=""> 

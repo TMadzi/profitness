@@ -1,6 +1,6 @@
 <template>
     <!-- This example requires Tailwind CSS v2.0+ -->
-<footer class="bg-primary mt-24" aria-labelledby="footer-heading">
+<footer class="bg-primary" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
@@ -25,7 +25,7 @@
       <div class="mt-24 grid grid-cols-2 gap-8 lg:(mt-12) xl:mt-0 xl:col-span-2">
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-md font-semibold text-gray-200 tracking-wider uppercase">
+            <h3 class="text-lg font-semibold text-gray-200 tracking-wider uppercase">
               About
             </h3>
             <ul role="list" class="mt-4 space-y-4">
@@ -55,7 +55,7 @@
             </ul>
           </div>
           <div class="mt-12 md:mt-0">
-            <h3 class="text-md font-semibold text-gray-200 tracking-wider uppercase">
+            <h3 class="text-lg font-semibold text-gray-200 tracking-wider uppercase">
               Facilities
             </h3>
             <ul role="list" class="mt-4 space-y-4">
@@ -87,7 +87,7 @@
         </div>
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-md font-semibold text-gray-200 tracking-wider uppercase">
+            <h3 class="text-lg font-semibold text-gray-200 tracking-wider uppercase">
               Classes
             </h3>
             <ul role="list" class="mt-4 space-y-4">
@@ -117,7 +117,7 @@
             </ul>
           </div>
           <div class="mt-12 md:mt-0">
-            <h3 class="text-md font-semibold text-gray-200 tracking-wider uppercase">
+            <h3 class="text-lg font-semibold text-gray-200 tracking-wider uppercase">
               Contact
             </h3>
             <ul role="list" class="mt-4 space-y-4">
