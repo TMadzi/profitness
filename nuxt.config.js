@@ -40,6 +40,7 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     'nuxt-windicss',
+    '@nuxtjs/google-fonts',
     '@nuxtjs/composition-api/module'
   ],
 
@@ -51,7 +52,13 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
-
+  googleFonts: {
+    families: {
+      'Pathway+Gothic+One': true,
+      'Source+Sans+Pro': true,
+    },
+    display: 'swap' 
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
