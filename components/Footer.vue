@@ -22,9 +22,8 @@
           </nuxt-link>
         </div>
       </div>
-      <div class="mt-24 grid grid-cols-2 gap-8 lg:(mt-12) xl:mt-0 xl:col-span-2">
-        <div class="md:grid md:grid-cols-2 md:gap-8">
-          <div>
+      <div class="mt-24 grid grid-cols-12 gap-8 lg:(mt-12) xl:mt-0 xl:col-span-2">
+          <div class="col-span-12 md:(col-span-3)">
             <h3 class="text-lg font-semibold text-gray-200 tracking-wider uppercase">
               About
             </h3>
@@ -48,82 +47,50 @@
               </li>
 
               <li>
-                <nuxt-link to="/contact" class="text-base text-gray-300 hover:text-white">
-                  Contact Us
+                <nuxt-link to="/classes" class="text-base text-gray-300 hover:text-white">
+                  Classes
                 </nuxt-link>
               </li>
             </ul>
           </div>
-          <div class="mt-12 md:mt-0">
+          <div class="mt-12 md:mt-0 col-span-12 md:(col-span-3)">
             <h3 class="text-lg font-semibold text-gray-200 tracking-wider uppercase">
               Facilities
             </h3>
             <ul role="list" class="mt-4 space-y-4">
               <li>
-                <nuxt-link to="/facilities#weights" class="text-base text-gray-300 hover:text-white">
+                <nuxt-link to="/facilities/weights" class="text-base text-gray-300 hover:text-white">
                   Weight Training
                 </nuxt-link>
               </li>
 
               <li>
-                <nuxt-link to="/facilities#cardio" class="text-base text-gray-300 hover:text-white">
+                <nuxt-link to="/facilities/cardio" class="text-base text-gray-300 hover:text-white">
                   Cardio Training
                 </nuxt-link>
               </li>
 
               <li>
-                <nuxt-link to="/facilities#functional" class="text-base text-gray-300 hover:text-white">
+                <nuxt-link to="/facilities/functional" class="text-base text-gray-300 hover:text-white">
                   Functional Training
                 </nuxt-link>
               </li>
 
               <li>
-                <nuxt-link to="/facilities#steamsauna" class="text-base text-gray-300 hover:text-white">
+                <nuxt-link to="/facilities/steam-sauna" class="text-base text-gray-300 hover:text-white">
                   Steam Room &amp; Sauna
                 </nuxt-link>
               </li>
             </ul>
           </div>
-        </div>
-        <div class="md:grid md:grid-cols-2 md:gap-8">
-          <div>
-            <h3 class="text-lg font-semibold text-gray-200 tracking-wider uppercase">
-              Classes
-            </h3>
-            <ul role="list" class="mt-4 space-y-4">
-              <li>
-                <nuxt-link to="/classes#schedule" class="text-base text-gray-300 hover:text-white">
-                  Schedule
-                </nuxt-link>
-              </li>
-
-              <li>
-                <nuxt-link to="//classes#spin" class="text-base text-gray-300 hover:text-white">
-                  Spin
-                </nuxt-link>
-              </li>
-
-              <li>
-                <nuxt-link to="//classes#aerobics" class="text-base text-gray-300 hover:text-white">
-                  Aerobics
-                </nuxt-link>
-              </li>
-
-              <li>
-                <nuxt-link to="/classes#yoga" class="text-base text-gray-300 hover:text-white">
-                  Pilates
-                </nuxt-link>
-              </li>
-            </ul>
-          </div>
-          <div class="mt-12 md:mt-0">
+          <div class="mt-12 md:mt-0 col-span-12 md:(col-span-6)">
             <h3 class="text-lg font-semibold text-gray-200 tracking-wider uppercase">
               Contact
             </h3>
             <ul role="list" class="mt-4 space-y-4">
-                              <li>
-                <nuxt-link to="/" class="text-base text-gray-300 hover:text-white">
-                  Shop No: SLEC 92, Sam Levy's Village, Harare
+                            <li>
+                              <nuxt-link to="/contact" class="text-base text-gray-300 hover:text-white">
+                  Contact Us
                 </nuxt-link>
               </li>
               <li>
@@ -131,15 +98,18 @@
                   +2638600 123 456
                 </nuxt-link>
               </li>
-
               <li>
                 <nuxt-link to="/" class="text-base text-gray-300 hover:text-white">
                   info@pro-fitness.co.zw
                 </nuxt-link>
               </li>
+                              <li>
+                <nuxt-link to="/" class="text-base text-gray-300 hover:text-white">
+                  Shop No: SLEC 92, Sam Levy's Village, Harare
+                </nuxt-link>
+              </li>
             </ul>
           </div>
-        </div>
       </div>
     </div>
     <div class="mt-12 border-t border-gray-200 pt-8">

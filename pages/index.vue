@@ -53,7 +53,7 @@
       <p class="mb-12 text-gray-500">Burn off those excess calories with our state of the art cardio equipment.
         
       </p>
-      <nuxt-link to="/facilities//cardio" class="py-2 w-24 mt-8 px-4 text-md bg-white border-2 uppercase text-primary font-bold border-primary ">Learn more</nuxt-link>  
+      <nuxt-link to="/facilities/cardio" class="py-2 w-24 mt-8 px-4 text-md bg-white border-2 uppercase text-primary font-bold border-primary ">Learn more</nuxt-link>  
     </div>
     <div class="col-span-12 order-2 md:(col-span-6 order-2)">
       <div class="fac-img right-fac-img cardio">
