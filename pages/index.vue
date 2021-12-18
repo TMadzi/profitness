@@ -2,37 +2,8 @@
   <div class="">
   <PageHeader class="header-img" height="h-64 lg:(h-home-img)" isHome img="https://www.samlevysvillage.com/wp-content/uploads/2015/09/Pro-fitness-Health-Club-1.jpg"/>
   <UpcomingClasses/>
-  <SectionTitle class="mt-4" text1="Our" text2="Classes"  size="text-7xl" color1="text-gray-700" color2="text-primary" />
-   <MainText class="px-4 pt-4 pb-12 lg:(px-32)"
-    text1="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
-    text2=""
-   />
-   <section class="grid grid-cols-12 mb-4 px-4pb-8 lg:(px-32) text-center">
-     <div class="col-span-12 md:(col-span-4 )p-4 h-64">
-       <h4 class="text-primary font-medium text-3xl uppercase">Aerobics</h4>
-       
-       <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1636973667/Pro%20Fitness/icons/squats-100_bumc6s.png" class="mx-auto w-12 my-4" alt="">
-       <p class="mb-4 lg:(mb-12) text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate ipsa error illum hic.</p>
-     </div>
-     <div class="col-span-12 md:(col-span-4 )p-4 h-64">
-       <h4 class="text-primary font-medium text-3xl uppercase">Spin</h4>
-       
-       <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1636973667/Pro%20Fitness/icons/spinning-100_qznfpk.png" class="mx-auto w-12 my-4" alt="">
-       <p class="mb-4 lg:(mb-12) text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate ipsa error illum hic.</p>
-     </div>
-     <div class="col-span-12 md:(col-span-4 )p-4 h-64 
-     ">
-       <h4 class="text-primary font-medium text-3xl uppercase">Yoga &amp; Pilates</h4>
-       
-       <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1636973668/Pro%20Fitness/icons/yoga-100_xjfyrf.png" class="mx-auto w-12 my-4" alt="">
-       <p class="mb-4 lg:(mb-12) text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate ipsa error illum hic.</p>
-     </div>
-   </section>
-   <section class="text-center">
-      <nuxt-link to="/classes" class="py-2 w-24 mt-8 px-4 text-md bg-white border-2 uppercase text-primary font-bold border-primary ">view schedule</nuxt-link>  
-   </section>
-  <SectionTitle class="mt-4" text1="Our" text2="Facilities"  size="text-7xl" color1="text-primary" color2="text-gray-700" />
-   <MainText class="px-4 py-4 lg:(px-32 py-12)"
+  <SectionTitle class="mt-4 px-8" text1="Our" text2="Facilities"  size="text-7xl" color1="text-primary" color2="text-gray-700" />
+   <MainText class="px-8 pb-4 lg:(px-32 py-12)"
     text1="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a!"
     text2=""
    />
@@ -41,16 +12,16 @@
       <div class="fac-img left-fac-img weights">
       </div>
      </div>
-    <div class="col-span-12 px-8 order-1 md:(col-span-6 py-16 pl-20 order-2)  weight-text">
-      <h1 class="text-6xl uppercase font-bold mb-12 text-gray-700">Weight <span class="text-primary">Training</span> .</h1>
-      <p class="mb-12 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate ipsa error illum hic tempora labore quae nihil eum quia atque aperiam explicabo, rerum qui odit suscipit.</p>
+    <div class="col-span-12 px-8 order-1 pb-12 text-center  md:(col-span- text-left 6 py-16 pl-20 order-2)  weight-text">
+      <h1 class=" text-4xl mt-4 mb-4 text-center md:(text-6xl mb-12 text-left) uppercase font-bold  text-gray-700">Weight <span class="text-primary">Training</span>.</h1>
+      <p class="mb-12 text-gray-500 text-md tracking-wide leading-loose">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate ipsa error illum hic tempora labore quae nihil eum quia atque aperiam explicabo, rerum qui odit suscipit.</p>
       <nuxt-link to="/facilities/weights" class="py-2 w-24 mt-8 px-4 text-md bg-white border-2 uppercase text-primary font-bold border-primary ">Learn more</nuxt-link>  
     </div>
   </section>
   <section class="grid grid-cols-12 mb-4">
-      <div class="col-span-12 px-8 order-1 md:(col-span-6 pl-8 py-16 pr-12 order-1) ">
-      <h1 class="text-6xl uppercase font-bold mb-12 text-gray-700">Cardio <span class="text-primary">.</span></h1>
-      <p class="mb-12 text-gray-500">Burn off those excess calories with our state of the art cardio equipment.
+      <div class="col-span-12 px-8 order-1 pb-12 text-center md:(col-span-6 text-left  pl-8 py-16 pr-12 order-1) ">
+      <h1 class=" text-4xl mt-4 mb-4 text-center md:(text-6xl mb-12 text-left) uppercase font-bold  text-gray-700">Cardio<span class="text-primary">.</span></h1>
+      <p class="mb-12 text-gray-500 text-md tracking-wide leading-loose">Burn off those excess calories with our state of the art cardio equipment.
         
       </p>
       <nuxt-link to="/facilities/cardio" class="py-2 w-24 mt-8 px-4 text-md bg-white border-2 uppercase text-primary font-bold border-primary ">Learn more</nuxt-link>  
@@ -61,20 +32,20 @@
      </div>
   </section>
     <section class="grid grid-cols-12 mb-4">
-    <div class="col-span-12 order-2 md:(col-span-6 order-1)">
+    <div class="col-span-12 order-2  md:(col-span-6 order-1)">
       <div class="fac-img left-fac-img functional">
       </div>
      </div>
-    <div class="col-span-12 px-8 order-1 md:(col-span-6 py-16 pl-20 order-2) ">
-      <h1 class="text-6xl uppercase font-bold mb-12 text-gray-700"><span class="text-primary">Functional</span> Training <span class="text-primary">.</span></h1>
-      <p class="mb-12 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate ipsa error illum hic tempora labore quae nihil eum quia atque aperiam explicabo, rerum qui odit suscipit.</p>
+    <div class="col-span-12 px-8 order-1 pb-12 text-center  md:(col-span- text-left 6 py-16 pl-20 order-2) ">
+      <h1 class=" text-4xl mt-4 mb-4 text-center md:(text-6xl mb-12 text-left) uppercase font-bold  text-gray-700"><span class="text-primary">Functional</span> Training<span class="text-primary">.</span></h1>
+      <p class="mb-12 text-gray-500 text-md tracking-wide leading-loose">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate ipsa error illum hic tempora labore quae nihil eum quia atque aperiam explicabo, rerum qui odit suscipit.</p>
       <nuxt-link to="/facilities/functional" class="py-2 w-24 mt-8 px-4 text-md bg-white border-2 uppercase text-primary font-bold border-primary ">Learn more</nuxt-link>  
     </div>
   </section>
   <section class="grid grid-cols-12">
-      <div class="col-span-12 px-8 order-1 md:(col-span-6 pl-8 py-16 pr-12) ">
-      <h1 class="text-6xl uppercase font-bold mb-12 text-gray-700">Sauna <span class="text-primary">&amp;</span> Steam Room <span class="text-primary">.</span></h1>
-      <p class="mb-12 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate ipsa error illum hic tempora labore quae nihil eum quia atque aperiam explicabo, rerum qui odit suscipit.</p>
+      <div class="col-span-12 px-8 order-1 pb-12 text-center md:(col-span-6 text-left  pl-8 py-16 pr-12) ">
+      <h1 class=" text-4xl mt-4 mb-4 text-center md:(text-6xl mb-12 text-left) uppercase font-bold  text-gray-700">Sauna <span class="text-primary">&amp;</span> Steam Room<span class="text-primary">.</span></h1>
+      <p class="mb-12 text-gray-500 text-md tracking-wide leading-loose">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate ipsa error illum hic tempora labore quae nihil eum quia atque aperiam explicabo, rerum qui odit suscipit.</p>
       <nuxt-link to="/facilities/steam-sauna" class="py-2 w-24 mt-8 px-4 text-md bg-white border-2 uppercase text-primary font-bold border-primary ">Learn more</nuxt-link>  
     </div>
     <div class="col-span-12 order-2 md:(col-span-6)">
@@ -82,6 +53,34 @@
       </div>
      </div>
   </section>
+    <SectionTitle class="mt-4" text1="Our" text2="Classes"  size="text-7xl" color1="text-gray-700" color2="text-primary" />
+   <MainText class=" lg:(px-32 px-8 pt-4 pb-12)"
+    text1="We have a variety of classes available no matter what your health and fitness goals are. View our schedule to find out more!"
+    text2=""
+   />
+   <section class="grid grid-cols-12 mb-4 px-4  gap-y-8 lg:(px-32 pb-8) text-center">
+     <div class="col-span-12 w-2/3 mx-auto md:(w-full col-span-4  h-64)">
+       <h4 class="text-primary font-medium text-3xl uppercase">Aerobics</h4>
+       
+       <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1636973667/Pro%20Fitness/icons/squats-100_bumc6s.png" class="mx-auto w-12 my-4" alt="">
+       <p class="mb-4 lg:(mb-12) text-gray-500">Break a sweat in one of our many aerobics studio classes.</p>
+     </div>
+     <div class="col-span-12 w-2/3 mx-auto md:(w-full col-span-4 h-64)">
+       <h4 class="text-primary font-medium text-3xl uppercase">Spin</h4>
+       
+       <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1636973667/Pro%20Fitness/icons/spinning-100_qznfpk.png" class="mx-auto w-12 my-4" alt="">
+       <p class="mb-4 lg:(mb-12) text-gray-500">Hop on a bike and ride yourself into the best shape of your life.</p>
+     </div>
+     <div class="col-span-12 w-2/3 mx-auto md:(w-full col-span-4 h-64) 
+     ">
+       <h4 class="text-primary font-medium text-3xl uppercase">Yoga &amp; Pilates</h4>
+       <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1636973668/Pro%20Fitness/icons/yoga-100_xjfyrf.png" class="mx-auto w-12 my-4" alt="">
+       <p class="mb-4 lg:(mb-12) text-gray-500">Enjoy peace and relaxation through yoga, or improve strngth and flexibility in pilates.</p>
+     </div>
+   </section>
+   <section class="text-center">
+      <nuxt-link to="/classes" class="py-2 w-24 mt-8 px-4 text-md bg-white border-2 uppercase text-primary font-bold border-primary ">view schedule</nuxt-link>  
+   </section>
   <Pricing />
   
   </div>
@@ -151,7 +150,6 @@ body{
     padding: 10px;
     width:300px;
     background: white;
-    position: absolute;
     top: -120px;
     right: 20px;
   }

@@ -1,10 +1,10 @@
 <template>
     <section class="grid grid-cols-12">
         <div class="col-span-12  text-center px-4 flex place-items-center py-2 bg-primary h-16 md:() lg:(col-span-3 text-left h-32)">
-            <h4 class="w-full text-white text-3xl uppercase font-medium">Upcoming classes</h4>
+            <h4 class="w-full text-white text-xl uppercase font-medium md:(text-3xl)">Upcoming classes</h4>
         </div>
             <UpcomingClass
-                v-for="eClass in shownClasses.slice(0,3)"
+                v-for="eClass in shownClasses"
                 :key="eClass.id"
                 :className="eClass.className"
                 :day="eClass.day"
@@ -37,7 +37,7 @@ export default Vue.extend({
             },
             {
                 id: 3,
-                className: "Power Run",
+                className: "Powers Run",
                 day: "Saturday",
                 startTime: "09:00",
                 endTime: "10:00",
@@ -54,14 +54,14 @@ export default Vue.extend({
             {
                 id: 5,
                 className: "Storo",
-                day: "Friday",
+                day: "Saturday",
                 startTime: "17:00",
                 endTime: "18:00",
                 link: "/classes/#annihilate"
             },
             {
                 id: 6,
-                className: "Power Run",
+                className: "Power Runs",
                 day: "Saturday",
                 startTime: "09:00",
                 endTime: "10:00",
@@ -74,12 +74,12 @@ export default Vue.extend({
         const today = date.getDay()
         const time = date.getHours()
         const shownClasses = upcomingClasses.filter(x=> daysArray.indexOf(x.day) >= today)
-                return {
-                    shownClasses,
-                    upcomingClasses,
-                    today,
-                    time
-            }
+            return {
+                shownClasses,
+                upcomingClasses,
+                today,
+                time
+        }
     }
 })
 </script>

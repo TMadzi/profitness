@@ -24,7 +24,7 @@
       </div>
     </div>
        <section class="text-center pb-16">
-      <nuxt-link to="/classes" class="py-2 w-24 mt-8 px-4 text-md bg-white  uppercase text-primary font-bold border-primary ">All rates</nuxt-link>  
+      <nuxt-link to="/rates" class="py-2 w-24 mt-8 px-4 text-md bg-white  uppercase text-primary font-bold border-primary ">All rates</nuxt-link>  
    </section>
   </div>
 </div>

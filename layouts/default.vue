@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full overflow-x-hidden">
+    <div class="w-full overflow-x-hidden mx-auto max-w-screen-2xl">
         <Navbar />
         <Nuxt />
         <Footer />

@@ -1,6 +1,6 @@
 <template>
     <!-- This example requires Tailwind CSS v2.0+ -->
-<footer class="bg-primary" aria-labelledby="footer-heading">
+<footer class="bg-primary text-center sm:(text-left)" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
@@ -53,7 +53,7 @@
               </li>
             </ul>
           </div>
-          <div class="mt-12 md:mt-0 col-span-12 md:(col-span-3)">
+          <div class="mt-4 md:mt-0 col-span-12 md:(col-span-3)">
             <h3 class="text-lg font-semibold text-gray-200 tracking-wider uppercase">
               Facilities
             </h3>
@@ -83,7 +83,7 @@
               </li>
             </ul>
           </div>
-          <div class="mt-12 md:mt-0 col-span-12 md:(col-span-6)">
+          <div class="mt-4 md:mt-0 col-span-12 md:(col-span-6)">
             <h3 class="text-lg font-semibold text-gray-200 tracking-wider uppercase">
               Contact
             </h3>
@@ -105,7 +105,7 @@
               </li>
                               <li>
                 <nuxt-link to="/" class="text-base text-gray-300 hover:text-white">
-                  Shop No: SLEC 92, Sam Levy's Village, Harare
+                  Shop No: SLEC 92, <br>Sam Levy's Village, <br> Harare
                 </nuxt-link>
               </li>
             </ul>

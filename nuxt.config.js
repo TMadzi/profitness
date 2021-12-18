@@ -47,8 +47,13 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/axios',
+    '@nuxtjs/auth-next'
   ],
+  auth: {
+    // Options
+  },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
@@ -57,7 +62,7 @@ export default {
       'Pathway+Gothic+One': true,
       'Source+Sans+Pro': true,
     },
-    display: 'swap' 
+    display: 'swap'
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

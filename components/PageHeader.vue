@@ -1,6 +1,6 @@
 <template>
 <!-- FIXED IMAGE -->
-    <section class="bg-contain relative bg-no-repeat bg-fixed md:(bg-cover)" :class="height" :style="{ backgroundImage: `url(${img})` }">
+    <section class="bg-cover relative bg-no-repeat bg-fixed md:(bg-cover)" :class="height" :style="{ backgroundImage: `url(${img})` }">
         <div v-show="isHome" class="hidden lg:(block bg-white h-96 w-72 absolute left-8 bottom-16 p-6)">
             <h3 class="uppercase text-primary font-bold text-6xl">MAKE<span class="text-gray-600">. </span><span class="text-gray-600">IT</span>. HAPPEN<span class="text-gray-600">!</span></h3>
             <p class="text-md text-gray-700 mt-6">

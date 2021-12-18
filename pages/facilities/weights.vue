@@ -1,13 +1,13 @@
 <template>
     <div>
       <div class="relative">
-        <PageHeader class="bg-top" height="h-64 lg:(h-small-img)"  pos="bg-top" img="https://res.cloudinary.com/defmmlrqg/image/upload/v1633426824/Pro%20Fitness/_SAM2513_2_hqkrrf.jpg"/>
+        <PageHeader class="bg-top" height="h-72 lg:(h-small-img)"  pos="bg-top" img="https://res.cloudinary.com/defmmlrqg/image/upload/v1633426824/Pro%20Fitness/_SAM2513_2_hqkrrf.jpg"/>
         <div class="bg-black absolute top-0 opacity-60 w-full h-full"></div>
-        <h1 class="text-white flex  align-bottom justify-end  leading-44 absolute bottom-0 text-center font-bold text-banner tracking-wide w-full px-16">WEIGHTS</h1>
+        <h1 class="text-white flex  align-bottom justify-center  text-8xl absolute bottom-0 text-center font-bold md:(text-banner leading-44 px-16 justify-end) tracking-wide w-full ">WEIGHTS</h1>
         </div>
-        <section class="py-20 px-4 text-right bg-bgGrey">
-          <h1 class="text-7xl font-bold">STRENGTH. TONING. POWER</h1>
-          <p class="pt-4 max-w-1/2 float-right text-lg text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni saepe, sunt ullam labore facere excepturi aspernatur quidem error rerum doloremque dolorem consequatur corrupti esse. Perspiciatis dolorem ex architecto dolores eius!</p>
+        <section class=" px-4 text-center py-12 md:(py-20 text-right) bg-bgGrey">
+          <h1 class="text-5xl md:(text-7xl) font-bold text-gray-700"><span class="text-primary">STRENGTH.</span> TONING. <span class="text-primary">POWER.</span></h1>
+          <p class="pt-4  md:(max-w-1/2 float-right) text-lg text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni saepe, sunt ullam labore facere excepturi aspernatur quidem error rerum doloremque dolorem consequatur corrupti esse. Perspiciatis dolorem ex architecto dolores eius!</p>
           <div class="clear-both"></div>
         </section>
     <section class="grid grid-cols-12">
@@ -15,17 +15,19 @@
       <div class="fac-img left-fac-img functional">
       </div>
      </div>
-    <div class="col-span-12 px-8 order-1 md:(col-span-6 py-16 pl-20 order-2) ">
-      <h1 class="text-6xl uppercase font-bold mb-12 text-gray-700"><span class="text-primary">What is</span> Weight Training<span class="text-primary">?</span></h1>
-      <p class="mb-12 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate ipsa error illum hic tempora labore quae nihil eum quia atque aperiam explicabo, rerum qui odit suscipit.</p>
+    <div class="col-span-12 px-8 py-12 text-center order-1 md:(col-span-6 py-16 pl-20 order-2) ">
+      <h1 class="text-5xl uppercase font-bold mb-8 text-gray-700 md:(text-6xl)"><span class="text-primary">What is</span> Weight Training<span class="text-primary">?</span></h1>
+      <p class="mb-6 text-gray-500 text-lg">Weight training uses weights as a form of resistance to help make your muscles stronger. You can perform weight training using free weights (dumbbells, barbells and kettlebells) or by using machines.</p>
+      <p class="text-gray-500 text-lg md:(mb-12)">When doing weight training, it is important that you use proper form and technique. We suggest that new/novice gym memebers schedule a session with a <nuxt-link to="/trainers" class="font-bold text-primary">personal trainer</nuxt-link> so that they can lerarn correct form and prevent serious injury.</p>
     </div>
   </section>
   <section class="grid grid-cols-12">
-      <div class="col-span-12 px-8 order-1 md:(col-span-6 pl-8 py-16 pr-12 order-1) ">
-      <h1 class="text-6xl uppercase font-bold mb-12 text-gray-700">Weight Training <span class="text-primary">Benefits</span></h1>
-      <p class="mb-12 text-gray-500">Burn off those excess calories with our state of the art cardio equipment.
-        
-      </p>
+      <div class="col-span-12 px-8 py-12 order-1 md:(col-span-6 pl-8 py-16 pr-12 order-1) ">
+      <h1 class="text-5xl text-center uppercase font-bold mb-8 text-gray-700">Weight Training <span class="text-primary">Benefits</span></h1>
+      <p class="my-4 text-gray-500 text-lg flex flex-row gap-x-4 items-center"><span class="text-5xl font-bold text-accent">1.</span>Get stronger and make daily tasks (walking, carrying kids or grocieries) much easier.</p>
+      <p class="my-4 text-gray-500 text-lg flex flex-row gap-x-4 items-center"><span class="text-5xl font-bold text-accent">2.</span> As you gain muscle and lose body fat, you will have a leaner appearance</p>
+      <p class="my-4 text-gray-500 text-lg flex flex-row gap-x-4 items-center"><span class="text-5xl font-bold text-accent">3.</span> Burn off those excess calories with our state of the art cardio equipment</p>
+      <p class="my-4 text-gray-500 text-lg flex flex-row gap-x-4 items-center"><span class="text-5xl font-bold text-accent">4.</span> Burn off those excess calories with our state of the art cardio equipment</p>
     </div>
     <div class="col-span-12 order-2 md:(col-span-6 order-2)">
       <div class="fac-img right-fac-img cardio">

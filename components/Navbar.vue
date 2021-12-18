@@ -1,8 +1,8 @@
 <template>
-<div>
+<div class="w-full">
   <TopBanner/>
     <nav
-    class="flex fixed flex-direction-row  top-0  w-full items-center justify-between px-4 h-16 bg-white text-gray-700 z-10 shadow-xl md:(px-8 top-10) lg:(px-28)"
+    class="flex fixed flex-direction-row w-full  top-0  items-center justify-between px-4 h-16 bg-white text-gray-700 z-10 shadow-xl md:(px-8 top-10) lg:(px-28)"
   >
     <div class="flex flex-row  gap-x-4  items-center">
       <nuxt-link to="/" class="h-12 bg-white rounded-full md:(h-24 mt-16) ">
