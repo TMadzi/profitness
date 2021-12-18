@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/facilities/steam-sauna", {data:[{}],fetch:{},mutations:[]});

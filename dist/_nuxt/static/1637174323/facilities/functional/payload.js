@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/facilities/functional", {data:[{}],fetch:{},mutations:void 0});

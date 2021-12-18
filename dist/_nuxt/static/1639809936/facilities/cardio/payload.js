@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/facilities/cardio", {data:[{}],fetch:{},mutations:[]});

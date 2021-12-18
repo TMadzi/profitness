@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/facilities/weights", {data:[{}],fetch:{},mutations:void 0});
