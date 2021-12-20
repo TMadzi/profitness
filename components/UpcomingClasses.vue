@@ -45,8 +45,8 @@ export default Vue.extend({
             },
             {
                 id: 4,
-                className: "Annihilate",
-                day: "Wednesday",
+                className: "Check",
+                day: "Thursday",
                 startTime: "09:00",
                 endTime: "10:00",
                 link: "/classes/#annihilate"
@@ -68,12 +68,24 @@ export default Vue.extend({
                 link: "/classes/#annihilate"
             },
         ]
+        const timeToInt = (time: String) =>{
+            let intTime = parseInt(time.slice(0,2))
+            return intTime
+        }
 
         const date = new Date()
         const daysArray = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
         const today = date.getDay()
         const time = date.getHours()
         const shownClasses = upcomingClasses.filter(x=> daysArray.indexOf(x.day) >= today)
+            .sort((a,b)=> {
+                 if (daysArray.indexOf(a.day) === daysArray.indexOf(b.day)){
+                    return timeToInt(a.startTime) < timeToInt(b.startTime) ? -1 : 1
+                } else {
+                    return daysArray.indexOf(a.day) < daysArray.indexOf(b.day) ? -1 : 1
+                }
+                })
+            .slice(0,3)
             return {
                 shownClasses,
                 upcomingClasses,

@@ -1,6 +1,6 @@
 <template>
   <div class="">
-  <PageHeader class="header-img" height="h-64 lg:(h-home-img)" isHome img="https://www.samlevysvillage.com/wp-content/uploads/2015/09/Pro-fitness-Health-Club-1.jpg"/>
+  <PageHeader class="header-img" height="h-72 lg:(h-home-img)" isHome img="https://www.samlevysvillage.com/wp-content/uploads/2015/09/Pro-fitness-Health-Club-1.jpg"/>
   <UpcomingClasses/>
   <SectionTitle class="mt-4 px-8" text1="Our" text2="Facilities"  size="text-7xl" color1="text-primary" color2="text-gray-700" />
    <MainText class="px-8 pb-4 lg:(px-32 py-12)"
@@ -12,7 +12,7 @@
       <div class="fac-img left-fac-img weights">
       </div>
      </div>
-    <div class="col-span-12 px-8 order-1 pb-12 text-center  md:(col-span- text-left 6 py-16 pl-20 order-2)  weight-text">
+    <div class="col-span-12 px-8 order-1 pb-12 text-center  md:(col-span-6 text-left py-16 pl-20 order-2)  weight-text">
       <h1 class=" text-4xl mt-4 mb-4 text-center md:(text-6xl mb-12 text-left) uppercase font-bold  text-gray-700">Weight <span class="text-primary">Training</span>.</h1>
       <p class="mb-12 text-gray-500 text-md tracking-wide leading-loose">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate ipsa error illum hic tempora labore quae nihil eum quia atque aperiam explicabo, rerum qui odit suscipit.</p>
       <nuxt-link to="/facilities/weights" class="py-2 w-24 mt-8 px-4 text-md bg-white border-2 uppercase text-primary font-bold border-primary ">Learn more</nuxt-link>  
@@ -36,7 +36,7 @@
       <div class="fac-img left-fac-img functional">
       </div>
      </div>
-    <div class="col-span-12 px-8 order-1 pb-12 text-center  md:(col-span- text-left 6 py-16 pl-20 order-2) ">
+    <div class="col-span-12 px-8 order-1 pb-12 text-center  md:(col-span-6 text-left py-16 pl-20 order-2) ">
       <h1 class=" text-4xl mt-4 mb-4 text-center md:(text-6xl mb-12 text-left) uppercase font-bold  text-gray-700"><span class="text-primary">Functional</span> Training<span class="text-primary">.</span></h1>
       <p class="mb-12 text-gray-500 text-md tracking-wide leading-loose">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate ipsa error illum hic tempora labore quae nihil eum quia atque aperiam explicabo, rerum qui odit suscipit.</p>
       <nuxt-link to="/facilities/functional" class="py-2 w-24 mt-8 px-4 text-md bg-white border-2 uppercase text-primary font-bold border-primary ">Learn more</nuxt-link>  

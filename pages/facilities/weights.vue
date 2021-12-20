@@ -15,14 +15,14 @@
       <div class="fac-img left-fac-img functional">
       </div>
      </div>
-    <div class="col-span-12 px-8 py-12 text-center order-1 md:(col-span-6 py-16 pl-20 order-2) ">
-      <h1 class="text-5xl uppercase font-bold mb-8 text-gray-700 md:(text-6xl)"><span class="text-primary">What is</span> Weight Training<span class="text-primary">?</span></h1>
+    <div class="col-span-12 px-8 py-12 text-center order-1 md:(col-span-6 py-4 px-8 order-2) lg:(py-16 px-4) ">
+      <h1 class="text-5xl uppercase font-bold mb-8 text-gray-700"><span class="text-primary">What is</span> Weight Training<span class="text-primary">?</span></h1>
       <p class="mb-6 text-gray-500 text-lg">Weight training uses weights as a form of resistance to help make your muscles stronger. You can perform weight training using free weights (dumbbells, barbells and kettlebells) or by using machines.</p>
       <p class="text-gray-500 text-lg md:(mb-12)">When doing weight training, it is important that you use proper form and technique. We suggest that new/novice gym memebers schedule a session with a <nuxt-link to="/trainers" class="font-bold text-primary">personal trainer</nuxt-link> so that they can lerarn correct form and prevent serious injury.</p>
     </div>
   </section>
   <section class="grid grid-cols-12">
-      <div class="col-span-12 px-8 py-12 order-1 md:(col-span-6 pl-8 py-16 pr-12 order-1) ">
+      <div class="col-span-12 px-8 py-12 order-1 md:(col-span-6 pl-8 py-4 pr-12 order-1) lg:(py-16) ">
       <h1 class="text-5xl text-center uppercase font-bold mb-8 text-gray-700">Weight Training <span class="text-primary">Benefits</span></h1>
       <p class="my-4 text-gray-500 text-lg flex flex-row gap-x-4 items-center"><span class="text-5xl font-bold text-accent">1.</span>Get stronger and make daily tasks (walking, carrying kids or grocieries) much easier.</p>
       <p class="my-4 text-gray-500 text-lg flex flex-row gap-x-4 items-center"><span class="text-5xl font-bold text-accent">2.</span> As you gain muscle and lose body fat, you will have a leaner appearance</p>

@@ -1,9 +1,11 @@
 <template>
-    <div class="w-full overflow-x-hidden mx-auto max-w-screen-2xl">
+<div class="bg-purple-100">
+    <div class="w-full bg-white overflow-x-hidden mx-auto 2xl:(w-3/4)">
         <Navbar />
         <Nuxt />
         <Footer />
     </div>
+</div>
 </template>
 <script>
 // export default {
