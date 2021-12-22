@@ -1,22 +1,25 @@
 <template>
-<div class="px-32 pb-12">
-    <div class="w-full flex flex-row">
-      <th class="w-1/8 py-4 text-white bg-primary bg-opacity-75">TIME</th>
-      <th class="w-1/8 py-4 text-white bg-primary bg-opacity-75">MONDAY</th>
-      <th class="w-1/8 py-4 text-white bg-primary bg-opacity-75">TUESDAY</th>
-      <th class="w-1/8 py-4 text-white bg-primary bg-opacity-75">WEDNESDAY</th>
-      <th class="w-1/8 py-4 text-white bg-primary bg-opacity-75">THURSDAY</th>
-    <th class="w-1/8 py-4 text-white bg-primary bg-opacity-75">FRIDAY</th>
-      <th class="w-1/8 py-4 text-white bg-primary bg-opacity-75">SATURDAY</th>
-      <th class="w-1/8 py-4 text-white bg-primary bg-opacity-75">SUNDAY</th>
+<div class="px-4 pb-12 lg:(px-24)">
+    <div class="w-full flex flex-row text-xs lg:(text-md)">
+      <th class="w-1/7 py-4 text-white bg-primary bg-opacity-75">TIME</th>
+      <th 
+        v-for="(day, index) in days"
+        :key= index
+        class="w-1/7 py-4  text-white bg-primary bg-opacity-75 uppercase lg:(hidden)">{{days[index].short}}
+      </th>
+      <th 
+        v-for="(day, index) in days"
+        :key= index
+        class="w-1/7 py-4 hidden  text-white bg-primary bg-opacity-75 uppercase lg:(block)">{{days[index].long}}
+      </th>
     </div>
     <div v-for="(hClass, index) in classes" :key="index" class="flex flex-row">
       <ClassBlock
         v-for="(value) in hClass"
         :key="value.id"
         :className="value.class"
-        :instructor="value.trainer"
-        @open-modal="handleClick(value.id)" 
+        :trainer="value.trainer"
+        @open-modal="value.trainer !='' ? handleClick(value.id):handleVoid()" 
       />
     </div>
   <ClassModal
@@ -28,43 +31,47 @@
 </template>
 <script>
 export default {
-  
   data() {
     const classes=  [
-                { mon: {id: 1, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, tues:  {id: 2, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, wed:  {id: 3, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, thurs:  {id: 4, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, fri:  {id: 5, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, sat:  {id: 6, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, sun:  {id: 7, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}},
-                { mon:  {id: 8, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, tues:  {id: 9, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, wed:  {id: 10, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, thurs:  {id: 11, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''} , fri:  {id: 12, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, sat:  {id: 13, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, sun:  {id: 14, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}},
-                { mon:  {id: 15, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, tues:  {id: 16, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, wed:  {id: 17, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, thurs:  {id: 18, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''} , fri:  {id: 19, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, sat:  {id: 20, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, sun:  {id: 21, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}},
-                { mon:  {id: 22, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, tues:  {id: 23, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, wed:  {id: 24, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, thurs:  {id: 25, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, fri:  {id: 26, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, sat:  {id: 27, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, sun:  {id: 28, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''} }
+                 [{id: 1, class: '06:00AM', trainer:'', desc: '', trainerImg:''},  {id: 2, class: '', trainer:'', desc: '', trainerImg:''},   {id: 3, class: '', trainer:'', desc: '', trainerImg:''},   {id: 4, class: '', trainer:'', desc: '', trainerImg:''}, {id: 5, class: '', trainer:'Lank', desc: '', trainerImg:''}, {id: 6, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, {id: 7, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''},  ],
+                 [{id: 9, class: '07:30AM', trainer:'', desc: '', trainerImg:''},   {id: 10, class: 'FrankT', trainer:'Lank', desc: '', trainerImg:''},   {id: 11, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''},   {id: 12, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, {id: 13, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''} , {id: 14, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, {id: 15, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''},],
+                 [{id: 17, class: '08:00AM', trainer:'', desc: '', trainerImg:''},   {id: 18, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''},   {id: 19, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''},   {id: 20, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, {id: 21, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''} , {id: 22, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, {id: 23, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''},],
+                 [{id: 25, class: '09:15AM', trainer:'', desc: '', trainerImg:''},   {id: 26, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''},   {id: 27, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''},   {id: 28, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, {id: 29, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, {id: 30, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, {id: 31, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, ],
+                 [{id: 33, class: '17:30PM', trainer:'', desc: '', trainerImg:''},   {id: 34, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''},   {id: 35, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''},   {id: 36, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, {id: 37, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, {id: 38, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, {id: 39, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''},]
             ]
-    const classes2=  [
-      { mon: {id: 1, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, tues:  {id: 2, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, wed:  {id: 3, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, thurs:  {id: 4, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, fri:  {id: 5, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, sat:  {id: 6, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, sun:  {id: 7, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}},
-      { mon:  {id: 8, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, tues:  {id: 9, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, wed:  {id: 10, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, thurs:  {id: 11, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''} , fri:  {id: 12, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, sat:  {id: 13, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, sun:  {id: 14, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}},
-      { mon:  {id: 15, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, tues:  {id: 16, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, wed:  {id: 17, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, thurs:  {id: 18, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''} , fri:  {id: 19, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, sat:  {id: 20, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, sun:  {id: 21, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}},
-      { mon:  {id: 22, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, tues:  {id: 23, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, wed:  {id: 24, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, thurs:  {id: 25, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, fri:  {id: 26, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, sat:  {id: 27, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''}, sun:  {id: 28, class: 'Frank', trainer:'Lank', desc: '', trainerImg:''} }
-    ]
     const selectedClass = {
       name: '',
       class:'',
       desc:'',
       img:''
-    }
-      
-        
-          
+    }  
+    const days = [
+      {long:'Monday', short:'Mon'},
+      {long:'Tuesday', short:'Tues'},
+      {long:'Wednesday', short:'Wed'},
+      {long:'Thursday', short:'Thurs'},
+      {long:'Friday', short:'Fri'},
+      {long:'Saturday', short:'Sat'},
+    ]
         return {
       openModal: false,
-      classes, selectedClass
+      classes, selectedClass, days
       // sixClass
     };
   },
   methods:{
     setModalContent(id){
-      this.selectedClass.class = this.classes.find( ({ sId }) => sId === id );
+      var x = this.classes.find( ({ sId }) => sId === id );
+      this.selectedClass.class = x.class
+      this.selectedClass.name = x.class
     },
     handleClick(id){
-      console.log(id)
+      this.setModalContent(id)
       this.openModal= true
+    },
+    handleVoid(){
     }
+
   },
   computed: {
     filteredArray() {

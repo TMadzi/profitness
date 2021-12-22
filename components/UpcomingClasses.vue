@@ -1,19 +1,3 @@
-<template>
-    <section class="grid grid-cols-12">
-        <div class="col-span-12  text-center px-4 flex place-items-center py-2 bg-primary h-16 md:() lg:(col-span-3 text-left h-32)">
-            <h4 class="w-full text-white text-xl uppercase font-medium md:(text-3xl)">Upcoming classes</h4>
-        </div>
-            <UpcomingClass
-                v-for="eClass in shownClasses"
-                :key="eClass.id"
-                :className="eClass.className"
-                :day="eClass.day"
-                :startTime="eClass.startTime"
-                :endTime="eClass.endTime"
-                :link="eClass.link"
-            />
-    </section>
-</template>
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
@@ -95,3 +79,19 @@ export default Vue.extend({
     }
 })
 </script>
+<template>
+    <section class="grid grid-cols-12">
+        <div class="col-span-12  text-center px-4 flex place-items-center py-2 bg-primary h-16 md:() lg:(col-span-3 text-left h-32)">
+            <h4 class="w-full text-white text-xl uppercase font-medium md:(text-3xl)">Upcoming classes</h4>
+        </div>
+            <UpcomingClass
+                v-for="eClass in shownClasses"
+                :key="eClass.id"
+                :className="eClass.className"
+                :day="eClass.day"
+                :startTime="eClass.startTime"
+                :endTime="eClass.endTime"
+                :link="eClass.link"
+            />
+    </section>
+</template>
