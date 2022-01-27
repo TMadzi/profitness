@@ -41,15 +41,6 @@
     width:500px;
   }
 
-    .feature-img-right{
-    padding: 10px;
-    width:300px;
-    background: white;
-    position: absolute;
-    top: 0;
-    right: 20px;
-  }
-
   .full-btn{
     width:100%;
   }
@@ -59,13 +50,13 @@
     margin:0px;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    background-position: center;
 }
 .cardio{
-background-image: url('https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,h_509/v1633427327/Pro%20Fitness/_SAM2502_dbjx94.jpg'); 
+background-image: url('https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,h_800/v1633427327/Pro%20Fitness/_SAM2502_dbjx94.webp'); 
 }
 .functional{
-background-image: url('https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,h_500/v1633427433/Pro%20Fitness/_SAM2481_jwxbnw.jpg'); 
+background-image: url('https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,h_821/v1633427384/Pro%20Fitness/_SAM2485_d9szjb.webp'); 
 }
 .sauna{
 background-image: url('https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_629/v1633426845/Pro%20Fitness/_SAM2462_em1x7l.jpg'); 

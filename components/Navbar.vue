@@ -51,10 +51,18 @@
       
       <img class="h-12" src="https://res.cloudinary.com/defmmlrqg/image/upload/v1634133271/Pro%20Fitness/pro-fitness-logo_qraxhr.jpg"/>
     </div>
-      <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-300 hover:(bg-primary text-white)" to="/" @click="isOpen = false">Home</nuxt-link>
-      <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-300 hover:(bg-primary text-white)" to="/trainers">Trainers</nuxt-link>
-      <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-300 hover:(bg-primary text-white)" to="/classes">Classes</nuxt-link>
- <vsa-list class="">
+    <ul>
+      <li @click="drawer" >
+        <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-300 hover:(bg-primary text-white)" to="/">Home</nuxt-link>
+      </li>
+      <li @click="drawer" >
+        <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-300 hover:(bg-primary text-white)" to="/trainers">Trainers</nuxt-link>
+      </li>
+      <li @click="drawer" >
+        <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-300 hover:(bg-primary text-white)" to="/classes">Classes</nuxt-link>
+      </li>
+    </ul>  
+       <vsa-list class="">
         <vsa-item>
           <vsa-heading >Facilities</vsa-heading>
           <vsa-content>
@@ -67,8 +75,14 @@
           </vsa-content>
         </vsa-item>
       </vsa-list>
-            <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-150 hover:(bg-primary text-white)" to="/staff">Staff</nuxt-link>
-            <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-150 hover:(bg-primary text-white)" to="/">Contact Us</nuxt-link>
+      <ul>
+        <li @click="drawer">
+           <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-150 hover:(bg-primary text-white)" to="/staff">Staff</nuxt-link>
+        </li>
+        <li @click="drawer">
+          <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-150 hover:(bg-primary text-white)" to="/">Contact Us</nuxt-link>
+        </li>
+      </ul>
       <div class="fixed bottom-0 w-full">
 
       </div>
@@ -102,6 +116,10 @@ export default {
   methods: {
     drawer() {
       this.isOpen = !this.isOpen;
+      console.log(this.isOpen)
+    },
+    closeDrawer(){
+      this.isOpen = false
     }
   },
   watch: {

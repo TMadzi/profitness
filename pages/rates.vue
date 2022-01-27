@@ -1,7 +1,7 @@
 <template>
     <div class="pb-16">
         <div class="relative">
-        <PageHeader class="bg-top mb-16" height="h-small-img" pos="bg-top" img="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_1800/v1633426850/Pro%20Fitness/_SAM2568_2_xi6obn.jpg"/>
+        <PageHeader class="bg-top mb-16" height="h-home-img" pos="bg-top" img="https://res.cloudinary.com/defmmlrqg/image/upload/v1639984107/Pro%20Fitness/desk-2_t9lg9s.jpg"/>
              <div class="bg-black absolute top-0 opacity-60 w-full h-full"></div>
             <h1 class="text-white flex justify-end leading-44  absolute bottom-0 text-center font-bold text-banner tracking-wide w-full px-16">RATES</h1>
         </div>
