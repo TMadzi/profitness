@@ -1,23 +1,23 @@
 <template>
   <div class="px-1 pb-12 lg:(px-24)">
     <div class="w-full hidden md:(flex flex-row) text-xs lg:(text-md)">
-      <th class="w-1/7 py-4 text-white bg-primary bg-opacity-75">
+      <div class="w-1/7 py-4 text-white bg-primary bg-opacity-75">
         TIME
-      </th>
-      <th
+      </div>
+      <div
         v-for="(day, index) in days"
         :key="index"
         class="w-1/7 py-4  text-white bg-primary bg-opacity-75 uppercase lg:(hidden)"
       >
         {{ days[index].short }}
-      </th>
-      <th
+      </div>
+      <div
         v-for="(day, index) in days"
         :key="index"
         class="w-1/7 py-4 hidden  text-white bg-primary bg-opacity-75 uppercase lg:(block)"
       >
         {{ days[index].long }}
-      </th>
+      </div>
     </div>
     <div v-for="(hClass, index) in classes" :key="hClass[index]" class="flex flex-row h-20">
       <div class="w-1/7 text-white bg-primary bg-opacity-75 flex items-center justify-center">
