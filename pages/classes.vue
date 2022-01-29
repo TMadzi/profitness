@@ -10,8 +10,10 @@ export default {
 Your browser does not support the video tag.
 
 </video>
-<div class="bg-black absolute top-0 opacity-60 w-full h-full"></div>
-<h1 class="text-white flex  align-bottom justify-center  text-7xl absolute bottom-0 text-center font-bold sm:(text-8xl) md:(text-9xl leading-44 px-16 justify-end) lg:(text-banner) tracking-wide w-full">CLASSES</h1>
+<div class="bg-black absolute top-0 opacity-60 w-full h-full flex flex-col items-center justify-center">
+<h1 class="relative text-white z-50 opacity-100 align-bottom justify-center  text-7xl text-center font-bold sm:(text-8xl) md:(text-9xl leading-44 px-16) lg:(text-9xl) tracking-wide w-full uppercase">More Than A Workout</h1>
+<span class="block text-white mt-8 text-4xl">Our classes are guaranteed to make you sweat</span>
+</div>
         </div>
          <MainText class="col-span-6 pt-12 px-8 lg:(px-32)"
     text1="Our expert instructors offer a wide variety of classes suitable for all ages and fitness levels."

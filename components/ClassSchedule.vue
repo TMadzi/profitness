@@ -1,6 +1,6 @@
 <template>
   <div class="px-1 pb-12 lg:(px-24)">
-    <div class="w-full hidden md:(flex flex-row)text-xs lg:(text-md)">
+    <div class="w-full hidden md:(flex flex-row) text-xs lg:(text-md)">
       <th class="w-1/7 py-4 text-white bg-primary bg-opacity-75">
         TIME
       </th>
@@ -19,7 +19,7 @@
         {{ days[index].long }}
       </th>
     </div>
-    <div v-for="(hClass, index) in classes" :key="hClass[index]" class="flex flex-row">
+    <div v-for="(hClass, index) in classes" :key="hClass[index]" class="flex flex-row h-20">
       <div class="w-1/7 text-white bg-primary bg-opacity-75 flex items-center justify-center">
         {{ sessions[index] }}
       </div>
@@ -46,23 +46,16 @@ export default {
   components: { ClassBlock2 },
   data () {
     const classes = [
-      [{ id: 2, class: 'Move', trainer: 'Me', desc: '', trainerImg: '' }, { id: 3, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 4, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 5, class: '', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 6, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 7, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }],
-      [{ id: 10, class: 'Frank T', trainer: 'Lank', desc: 'Feel the Birn', trainerImg: '' }, { id: 11, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 12, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 13, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 14, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 15, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }],
-      [{ id: 18, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 19, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 20, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 21, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 22, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 23, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }],
-      [{ id: 26, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 27, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 28, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 29, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 30, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 31, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }],
-      [{ id: 34, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 35, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 36, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 37, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 38, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 39, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }]
-    ]
-    const classes2 = [
-      { id: 1, day: 1, time: 3, class: '06:00AM', trainer: 'a', desc: 's', trainerImg: '' },
-      { id: 2, day: 2, time: 2, class: '06:00AM', trainer: 'b', desc: 'd', trainerImg: '' },
-      { id: 3, day: 3, time: 3, class: '07:00AM', trainer: 'c', desc: 'f', trainerImg: '' },
-      { id: 4, day: 2, time: 4, class: '06:00AM', trainer: 'd', desc: 'y', trainerImg: '' },
-      { id: 5, day: 3, time: 3, class: '06:00AM', trainer: 'e', desc: 'j', trainerImg: '' }
+      [{ id: 2, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 3, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 4, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 5, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 6, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 7, class: '', trainer: '', desc: '', trainerImg: '' }],
+      [{ id: 10, class: 'Hiit', trainer: 'Shayne', desc: 'Feel the Birn', trainerImg: '' }, { id: 11, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 12, class: 'Basic X-Train', trainer: 'Doug', desc: '', trainerImg: '' }, { id: 13, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 14, class: 'Spin', trainer: 'Cathy', desc: '', trainerImg: '' }, { id: 15, class: 'Annihilate', trainer: 'Danisa', desc: '', trainerImg: '' }],
+      [{ id: 18, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 19, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 20, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 21, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 22, class: 'Yoga', trainer: 'Kerryn', desc: '', trainerImg: '' }, { id: 23, class: '', trainer: '', desc: '', trainerImg: '' }],
+      [{ id: 26, class: 'Pilates', trainer: 'Kerryn', desc: '', trainerImg: '' }, { id: 27, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 28, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 29, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 30, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 31, class: 'Spin Inferno', trainer: 'Danisa', desc: '', trainerImg: '' }],
+      [{ id: 34, class: 'Ultra Spin', trainer: 'Lib', desc: '', trainerImg: '' }, { id: 35, class: 'Fighting Fit', trainer: 'Zu', desc: '', trainerImg: '' }, { id: 36, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 37, class: 'Zumba', trainer: 'Zororo', desc: '', trainerImg: '' }, { id: 38, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 39, class: '', trainer: '', desc: '', trainerImg: '' }]
     ]
     const selectedClass = {
       name: '',
       instructor: '',
-      desc: '',
+      desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a',
       img: ''
     }
     const sessions = [
@@ -83,7 +76,6 @@ export default {
     return {
       openModal: false,
       classes,
-      classes2,
       selectedClass,
       days,
       sessions
@@ -102,7 +94,7 @@ export default {
           if (item.id === id) {
             this.selectedClass.name = item.class
             this.selectedClass.instructor = item.trainer
-            this.selectedClass.desc = item.desc
+            // this.selectedClass.desc = item.desc
           }
         })
       })
