@@ -15,16 +15,6 @@ export default Vue.extend({
     const daysArray = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
     const today = date.getDay()
     const time = date.getHours()
-    // const shownClasses = upcomingClasses.filter(x => daysArray.indexOf(x.day) >= today)
-    //   .sort((a, b) => {
-    //     if (daysArray.indexOf(a.day) === daysArray.indexOf(b.day)) {
-    //       return timeToInt(a.startTime) < timeToInt(b.startTime) ? -1 : 1
-    //     } else {
-    //       return daysArray.indexOf(a.day) < daysArray.indexOf(b.day) ? -1 : 1
-    //     }
-    //   })
-    //   .slice(0, 3)
-    console.log(classesStore.getClassDayById(2))
     return {
       upcomingClasses,
       classesStore,
@@ -47,9 +37,8 @@ export default Vue.extend({
       :key="eClass.id"
       :class-name="eClass.class"
       :day="classesStore.getClassDayById(eClass.id)"
-      start-time="e"
-      end-time="ee"
-      link="ff"
+      :start-time="classesStore.getStartTimeBySessionId(eClass.session).hour+':'+classesStore.getStartTimeBySessionId(eClass.session).min+classesStore.getStartTimeBySessionId(eClass.session).suffix"
+      :end-time="(classesStore.getStartTimeBySessionId(eClass.session).hour+1)+':'+classesStore.getStartTimeBySessionId(eClass.session).min+classesStore.getStartTimeBySessionId(eClass.session).suffix"
     />
   </section>
 </template>
