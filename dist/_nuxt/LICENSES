@@ -1,5 +1,5 @@
 /*!
-  * vue-router v3.5.2
+  * vue-router v3.5.3
   * (c) 2021 Evan You
   * @license MIT
   */
@@ -17,12 +17,12 @@
  * MIT Licensed
  */
 
-/*!
- * vuex v3.6.2
- * (c) 2021 Evan You
- * @license MIT
- */
 
+/*!
+  * pinia v2.0.11
+  * (c) 2022 Eduardo San Martin Morote
+  * @license MIT
+  */
 
 /*!
  * vue-client-only v0.0.0-semantic-release

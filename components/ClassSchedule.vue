@@ -1,35 +1,37 @@
 <template>
   <div class="px-1 pb-12 lg:(px-24)">
-    <div class="w-full hidden md:(flex flex-row) text-xs lg:(text-md)">
-      <div class="w-1/7 py-4 text-white bg-primary bg-opacity-75">
-        TIME
+    <div class="flex flex-row">
+      <div class="w-1/7 text-center hidden md:(flex flex-col) text-xs lg:(text-lg)">
+        <div class="w-full py-4 text-white bg-primary bg-opacity-75">
+          TIME
+        </div>
+        <div v-for="x in numbers" :key="x" class="w-full h-20 text-white text-lg bg-primary bg-opacity-75 flex items-center justify-center">
+          {{ sessions[x].hour + ':' +sessions[x].min + sessions[x].suffix }}
+        </div>
       </div>
       <div
         v-for="(day, index) in days"
         :key="index"
-        class="w-1/7 py-4  text-white bg-primary bg-opacity-75 uppercase lg:(hidden)"
+        class="w-1/7 flex-flex-col  text-white bg-primary bg-opacity-75 uppercase lg:(hidden)"
       >
-        {{ days[index].short }}
-      </div>
-      <div
-        v-for="(day, index) in days"
-        :key="index"
-        class="w-1/7 py-4 hidden  text-white bg-primary bg-opacity-75 uppercase lg:(block)"
-      >
-        {{ days[index].long }}
+        <div class="py-3 text-center">
+          {{ days[index].short }}
+        </div>
+        <ClassBlock
+          v-for="value in classes.slice(index * 5,index * 5 + 5)"
+          :key="value.id"
+          :class-name="value.class"
+          :trainer="value.trainer"
+          @open-modal="handleClick(value.id)"
+        />
       </div>
     </div>
-    <div v-for="(hClass, index) in classes" :key="hClass[index]" class="flex flex-row h-20">
-      <div class="w-1/7 text-white bg-primary bg-opacity-75 flex items-center justify-center">
-        {{ sessions[index] }}
-      </div>
-      <ClassBlock
-        v-for="(value) in hClass"
-        :key="value.id"
-        :class-name="value.class"
-        :trainer="value.trainer"
-        @open-modal="handleClick(value.id)"
-      />
+    <div
+      v-for="(day, index) in days"
+      :key="index"
+      class="w-1/7 py-4 hidden  text-white bg-primary bg-opacity-75 uppercase lg:(block)"
+    >
+      {{ days[index].long }}
     </div>
     <ClassModal
       v-show="openModal"
@@ -41,43 +43,29 @@
   </div>
 </template>
 <script>
-import ClassBlock2 from './ClassBlock2.vue'
+import { useClasses } from '~/store/classes'
+import { useUtils } from '~/store/utils'
+
 export default {
-  components: { ClassBlock2 },
-  data () {
-    const classes = [
-      [{ id: 2, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 3, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 4, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 5, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 6, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 7, class: '', trainer: '', desc: '', trainerImg: '' }],
-      [{ id: 10, class: 'Hiit', trainer: 'Shayne', desc: 'Feel the Birn', trainerImg: '' }, { id: 11, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 12, class: 'Basic X-Train', trainer: 'Doug', desc: '', trainerImg: '' }, { id: 13, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 14, class: 'Spin', trainer: 'Cathy', desc: '', trainerImg: '' }, { id: 15, class: 'Annihilate', trainer: 'Danisa', desc: '', trainerImg: '' }],
-      [{ id: 18, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 19, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 20, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 21, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 22, class: 'Yoga', trainer: 'Kerryn', desc: '', trainerImg: '' }, { id: 23, class: '', trainer: '', desc: '', trainerImg: '' }],
-      [{ id: 26, class: 'Pilates', trainer: 'Kerryn', desc: '', trainerImg: '' }, { id: 27, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 28, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 29, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 30, class: 'Frank', trainer: 'Lank', desc: '', trainerImg: '' }, { id: 31, class: 'Spin Inferno', trainer: 'Danisa', desc: '', trainerImg: '' }],
-      [{ id: 34, class: 'Ultra Spin', trainer: 'Lib', desc: '', trainerImg: '' }, { id: 35, class: 'Fighting Fit', trainer: 'Zu', desc: '', trainerImg: '' }, { id: 36, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 37, class: 'Zumba', trainer: 'Zororo', desc: '', trainerImg: '' }, { id: 38, class: '', trainer: '', desc: '', trainerImg: '' }, { id: 39, class: '', trainer: '', desc: '', trainerImg: '' }]
-    ]
+  data ({ $pinia }) {
+    const classesStore = useClasses($pinia)
+    const utilsStore = useUtils($pinia)
+    const classes = classesStore.classes
     const selectedClass = {
       name: '',
       instructor: '',
-      desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatum blanditiis porro dolorem? Accusantium distinctio, vitae perspiciatis, officiis facilis vero doloribus asperiores dolores aliquid consectetur, deserunt maiores necessitatibus ratione a',
+      desc: '',
       img: ''
     }
-    const sessions = [
-      '06:00AM',
-      '07:30AM',
-      '08:00AM',
-      '09:15AM',
-      '17:30PM'
-    ]
-    const days = [
-      { long: 'Monday', short: 'Mon' },
-      { long: 'Tuesday', short: 'Tues' },
-      { long: 'Wednesday', short: 'Wed' },
-      { long: 'Thursday', short: 'Thurs' },
-      { long: 'Friday', short: 'Fri' },
-      { long: 'Saturday', short: 'Sat' }
-    ]
+    const numbers = [0, 1, 2, 3, 4]
+    const sessions = utilsStore.sessions
+    const days = utilsStore.days
     return {
       openModal: false,
       classes,
       selectedClass,
       days,
+      numbers,
       sessions
       // sixClass
     }
@@ -90,13 +78,11 @@ export default {
   methods: {
     currentClass (id) {
       return this.classes.forEach((element) => {
-        element.forEach((item) => {
-          if (item.id === id) {
-            this.selectedClass.name = item.class
-            this.selectedClass.instructor = item.trainer
-            // this.selectedClass.desc = item.desc
-          }
-        })
+        if (element.id === id) {
+          this.selectedClass.name = element.class
+          this.selectedClass.instructor = element.trainer
+          this.selectedClass.desc = element.desc
+        }
       })
     },
     handleClick (id) {

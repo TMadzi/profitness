@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/rates", {data:[{}],fetch:{},mutations:[]});

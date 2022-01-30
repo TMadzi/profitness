@@ -12,7 +12,7 @@ export default Vue.extend({
 </script>
 <template>
   <div
-    class="text-center w-1/7  py-2 border-1 border-white text-gray-700 flex flex-col gap-px justify-center bg-purple-200 lg:(py-3 gap-1 border-6) "
+    class="text-center h-20 py-2 border-1 border-white text-gray-700 flex flex-col gap-px justify-center bg-purple-200 lg:(py-3 gap-1 border-6) "
     :class="trainer==''?'':'hover:(cursor-pointer bg-purple-300 transition-all duration-200)'"
     @click="$emit('open-modal')"
   >

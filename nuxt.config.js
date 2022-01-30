@@ -19,8 +19,8 @@ export default {
     ],
     script: [
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js' },
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js' },
-    ],
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js' }
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -41,7 +41,8 @@ export default {
     '@nuxt/typescript-build',
     'nuxt-windicss',
     '@nuxtjs/google-fonts',
-    '@nuxtjs/composition-api/module'
+    '@nuxtjs/composition-api/module',
+    '@pinia/nuxt'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -60,7 +61,7 @@ export default {
   googleFonts: {
     families: {
       'Pathway+Gothic+One': true,
-      'Source+Sans+Pro': true,
+      'Source+Sans+Pro': true
     },
     display: 'swap'
   },

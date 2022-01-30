@@ -2,8 +2,9 @@
     <div class="pb-16">
         <div class="relative">
         <PageHeader class="bg-top" height="h-72 lg:(h-small-img)" pos="bg-top" img="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_1800/v1633426850/Pro%20Fitness/_SAM2568_2_xi6obn.jpg"/>
-             <div class="bg-black absolute top-0 opacity-60 w-full h-full"></div>
-            <h1 class="text-white flex  align-bottom justify-center  text-8xl absolute bottom-0 text-center font-bold md:(text-banner leading-44 px-16 justify-end) tracking-wide w-full">STAFF</h1>
+             <div class="bg-black absolute top-0 opacity-60 w-full h-full flex flex-col items-center justify-center">
+            <h1 class="relative text-white flex  align-bottom justify-center  text-8xl  text-center font-bold md:(text-9xl leading-44 px-16 justify-center) tracking-wide w-full opacity-90">STAFF</h1>
+             </div>
         </div>
          <MainText class="col-span-12 px-4 lg:(col-span-6 pt-12 px-32)"
     text1="We have a dedicated and professional staff who are ready to make your experience with us pleasant and enjoyable. Our team is also ready to assist with any challenges you may face while in our facility, so please don't hesitate in asking them for any thing."/>
