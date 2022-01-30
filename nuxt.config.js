@@ -1,7 +1,10 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  loading: {
+    color: '#8d3ea4',
+    height: '5px'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Pro Fitness Health Club',
