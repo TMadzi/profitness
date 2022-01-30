@@ -1,7 +1,7 @@
 <template>
   <div class="px-1 pb-12 lg:(px-24)">
     <div class="flex flex-row">
-      <div class="w-1/7 text-center hidden md:(flex flex-col) text-xs lg:(text-lg)">
+      <div class="w-1/7 text-center md:(flex flex-col) text-xs lg:(text-lg)">
         <div class="w-full py-4 text-white bg-primary bg-opacity-75">
           TIME
         </div>
@@ -12,7 +12,7 @@
       <div
         v-for="(day, index) in days"
         :key="index"
-        class="w-1/7 flex-flex-col  text-white bg-primary bg-opacity-75 uppercase lg:(hidden)"
+        class="w-1/7 flex-flex-col  text-white bg-primary bg-opacity-75 uppercase"
       >
         <div class="py-3 text-center">
           {{ days[index].short }}
@@ -25,13 +25,6 @@
           @open-modal="handleClick(value.id)"
         />
       </div>
-    </div>
-    <div
-      v-for="(day, index) in days"
-      :key="index"
-      class="w-1/7 py-4 hidden  text-white bg-primary bg-opacity-75 uppercase lg:(block)"
-    >
-      {{ days[index].long }}
     </div>
     <ClassModal
       v-show="openModal"
@@ -99,8 +92,4 @@ export default {
 }
 </script>
 <style scoped>
-td{
-    @apply border-1;
-    @apply border-white;
-}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <PageHeader class="header-img" height="h-96 bg-right  lg:(h-home-img bg-right-top)" is-home img="https://www.samlevysvillage.com/wp-content/uploads/2015/09/Pro-fitness-Health-Club-1.jpg" />
+    <PageHeader class="header-img" height="h-96 bg-right hidden  lg:(block h-home-img bg-right-top)" is-home img="https://www.samlevysvillage.com/wp-content/uploads/2015/09/Pro-fitness-Health-Club-1.jpg" />
     <img src="https://www.samlevysvillage.com/wp-content/uploads/2015/09/Pro-fitness-Health-Club-1.jpg" alt="Profitness Outside" class="mt-12 md:(hidden)">
     <UpcomingClasses />
     <SectionTitle
