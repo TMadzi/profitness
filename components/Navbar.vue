@@ -8,8 +8,9 @@
         <nuxt-link to="/" class="h-12 bg-white rounded-full md:(h-24 mt-16) ">
           <img class=" h-12 md:(h-24)  " src="https://res.cloudinary.com/defmmlrqg/image/upload/v1634132894/Pro%20Fitness/pro-fitness-logo_2_xjv965-removebg-preview_uufppn.png">
         </nuxt-link>
-
-        <img class="h-12 mt-4" src="https://res.cloudinary.com/defmmlrqg/image/upload/v1634133271/Pro%20Fitness/pro-fitness-logo_qraxhr.jpg">
+        <nuxt-link to="/">
+          <img class="h-12 mt-4" src="https://res.cloudinary.com/defmmlrqg/image/upload/v1634133271/Pro%20Fitness/pro-fitness-logo_qraxhr.jpg">
+        </nuxt-link>
       </div>
       <div class="flex items-center">
         <div class="flex  md:justify-between md:bg-transparent">
