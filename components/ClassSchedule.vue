@@ -1,6 +1,27 @@
 <template>
   <div class="px-1 pb-12 lg:(px-24)">
-    <div class="flex flex-row">
+    <!-- Mobile -->
+    <!-- Day then ordered list of classes -->
+    <div v-for="(day, index) in days" :key="index" class="flex flex-col text-center px-8 py-4">
+      <h2 class="text-3xl text-center font-bold uppercase text-gray-700">
+        {{ day.long }}
+      </h2>
+      <div v-for="eClass in classesStore.getDaysClasses(index)" :key="eClass.id" class="mt-4 text-gray-700 tracking-wide py-4 px-4">
+        <h4>{{classesStore.getStartTimeBySessionId(eClass.session).hour+':'+classesStore.getStartTimeBySessionId(eClass.session).min+classesStore.getStartTimeBySessionId(eClass.session).suffix}}</h4>
+        <h3 class="text-2xl uppercase">
+          {{ eClass.class }}
+        </h3>
+        <h4 class="text-md">
+          with {{ eClass.trainer }}
+        </h4>
+        <!-- <p class="text-sm mt-4">{{ eClass.desc }}</p> -->
+        <p class="text-sm mt-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, magnam corrupti consectetur quibusdam porro nostrum ex! Nihil illum ea sapiente dolorum iste provident laborum maxime maiores iusto vel. Ducimus, sint.
+        </p>
+      </div>
+    </div>
+    <!-- Desktop -->
+    <div class=" hidden md:(flex flex-row)">
       <div class="w-1/7 text-center md:(flex flex-col) text-xs lg:(text-lg)">
         <div class="w-full py-4 text-white bg-primary bg-opacity-75">
           TIME
@@ -58,6 +79,7 @@ export default {
       classes,
       selectedClass,
       days,
+      classesStore,
       numbers,
       sessions
       // sixClass

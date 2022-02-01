@@ -13,7 +13,7 @@ export const useClasses = defineStore('classes', {
       { id: 7, class: '', trainer: '', desc: '', session: 2, trainerImg: '' },
       { id: 8, class: '', trainer: '', desc: '', session: 3, trainerImg: '' },
       { id: 9, class: '', trainer: '', desc: '', session: 4, trainerImg: '' },
-      { id: 10, class: 'Fighting Fit', trainer: 'Zu', desc: '', session: 5, trainerImg: '' },
+      { id: 10, class: 'Fighting Fit', trainer: 'Tendai', desc: '', session: 5, trainerImg: '' },
       { id: 11, class: '', trainer: '', desc: '', session: 1, trainerImg: '' },
       { id: 12, class: 'Basic X-Train', trainer: 'Doug', desc: '', session: 2, trainerImg: '' },
       { id: 13, class: '', trainer: '', desc: '', session: 3, trainerImg: '' },
@@ -85,6 +85,21 @@ export const useClasses = defineStore('classes', {
       const utilsStore = useUtils()
       const session = utilsStore.sessions[sessionId - 1]
       return session
+    },
+    getDaysClasses (dayIndex) {
+      if (dayIndex === 0) {
+        return this.classes.filter(x => x.id <= 5 && x.trainer !== '')
+      } else if (dayIndex === 1) {
+        return this.classes.filter(x => x.id > 5 && x.id <= 10 && x.trainer !== '')
+      } else if (dayIndex === 2) {
+        return this.classes.filter(x => x.id > 10 && x.id <= 15 && x.trainer !== '')
+      } else if (dayIndex === 3) {
+        return this.classes.filter(x => x.id > 15 && x.id <= 20 && x.trainer !== '')
+      } else if (dayIndex === 4) {
+        return this.classes.filter(x => x.id > 20 && x.id <= 25 && x.trainer !== '')
+      } else {
+        return this.classes.filter(x => x.id > 25 && x.trainer !== '')
+      }
     }
   }
 })

@@ -123,7 +123,7 @@
         </h4>
         <img src="https://res.cloudinary.com/defmmlrqg/image/upload/v1636973668/Pro%20Fitness/icons/yoga-100_xjfyrf.png" class="mx-auto w-12 my-4" alt="">
         <p class="mb-4 lg:(mb-12) text-gray-500">
-          Enjoy peace and relaxation through yoga, or improve strngth and flexibility in pilates.
+          Enjoy peace and relaxation through yoga, or improve strength and flexibility in pilates.
         </p>
       </div>
     </section>
