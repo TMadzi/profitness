@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col gap-y-2 px-4 text-center py-8">
-        <p class=" text-gray-700 text-md tracking-wider leading-relaxed md:(leading-loose)">{{text1}}</p>
-        <p class="text-gray-700 text-md tracking-wider leading-relaxed md:(leading-loose)">{{text2}}</p>
+        <p class=" text-gray-500 text-md tracking-wide leading-loose md:(leading-loose)">{{text1}}</p>
+        <p class="text-gray-500 text-md tracking-wide leading-loose md:(leading-loose)">{{text2}}</p>
     </div>
 </template>
 <script lang="ts">
