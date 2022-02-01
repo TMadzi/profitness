@@ -2,8 +2,9 @@
     <div>
       <div class="relative">
         <PageHeader class="bg-top" height="h-72 lg:(h-small-img)"  pos="bg-top" img="https://res.cloudinary.com/defmmlrqg/image/upload/v1633427001/Pro%20Fitness/_SAM2415_jiencj.jpg"/>
-        <div class="bg-black absolute top-0 opacity-60 w-full h-full"></div>
-        <h1 class="text-white flex  align-bottom justify-center  text-7xl absolute bottom-0 text-center font-bold sm:(text-8xl) md:(text-9xl leading-44 px-16 justify-end) lg:(text-banner) tracking-wide w-full ">FUNCTIONAL</h1>
+             <div class="bg-black absolute top-0 opacity-60 w-full h-full flex flex-col items-center justify-center">
+            <h1 class="relative text-white flex  align-bottom justify-center  text-8xl  text-center font-bold md:(text-9xl leading-44 px-16 justify-center) tracking-wide w-full opacity-90">FUNCTIONAL</h1>
+             </div>
         </div>
         <section class=" px-4 text-center py-12 md:(py-20 text-right) bg-bgGrey">
           <h1 class="text-5xl md:(text-7xl) font-bold text-gray-700"><span class="text-primary">FLEXIBILITY.</span> SUPPORT.</h1>

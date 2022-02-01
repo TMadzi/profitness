@@ -75,18 +75,26 @@
             <vsa-heading>Facilities</vsa-heading>
             <vsa-content>
               <div class="text-lg font-medium text-gray-500">
-                <n-link to="/facilities/weights" class="block py-4">
-                  Weight Training
-                </n-link>
-                <n-link to="/facilities/cardio" class="block py-4">
-                  Cardio Training
-                </n-link>
-                <n-link to="/facilities/functional" class="block py-4">
-                  Functional Training
-                </n-link>
-                <n-link to="/facilities/steam-sauna" class="block py-4">
-                  Steam Room &amp; Sauna
-                </n-link>
+                <div @click="drawer">
+                  <n-link to="/facilities/weights" class="block py-4">
+                    Weight Training
+                  </n-link>
+                </div>
+                <div @click="drawer">
+                  <n-link to="/facilities/cardio" class="block py-4">
+                    Cardio Training
+                  </n-link>
+                </div>
+                <div @click="drawer">
+                  <n-link to="/facilities/functional" class="block py-4">
+                    Functional Training
+                  </n-link>
+                </div>
+                <div @click="drawer">
+                  <n-link to="/facilities/steam-sauna" class="block py-4">
+                    Steam Room &amp; Sauna
+                  </n-link>
+                </div>
               </div>
             </vsa-content>
           </vsa-item>
@@ -95,6 +103,11 @@
           <li @click="drawer">
             <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-150 hover:(bg-primary text-white)" to="/staff">
               Staff
+            </nuxt-link>
+          </li>
+          <li @click="drawer">
+            <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-150 hover:(bg-primary text-white)" to="/rates">
+              Rates
             </nuxt-link>
           </li>
           <li @click="drawer">
