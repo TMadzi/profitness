@@ -46,13 +46,13 @@
         class="transform bg-white top-0 z-50 right-0 w-64 fixed h-full overflow-auto ease-in-out transition-all duration-300"
         :class="isOpen ? 'translate-x-0' : 'translate-x-full'"
       >
-        <div class="flex flex-col  gap-x-4  items-center">
+        <router-link to="/" @click="drawer" class="flex flex-col  gap-x-4  items-center md:(flex-row px-4 justify-center)">
           <div class="h-24 mt-4 bg-white rounded-full">
-            <img class="h-24  " src="https://res.cloudinary.com/defmmlrqg/image/upload/v1634132894/Pro%20Fitness/pro-fitness-logo_2_xjv965-removebg-preview_uufppn.png">
+            <img class="h-20  " src="https://res.cloudinary.com/defmmlrqg/image/upload/v1634132894/Pro%20Fitness/pro-fitness-logo_2_xjv965-removebg-preview_uufppn.png">
           </div>
 
           <img class="h-12" src="https://res.cloudinary.com/defmmlrqg/image/upload/v1634133271/Pro%20Fitness/pro-fitness-logo_qraxhr.jpg">
-        </div>
+        </router-link>
         <ul>
           <li @click="drawer">
             <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-300 hover:(bg-primary text-white)" to="/">

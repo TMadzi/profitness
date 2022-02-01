@@ -25,7 +25,7 @@ export default Vue.extend({
       },
       {
         name: 'Anton',
-        img: 'https://res.cloudinary.com/defmmlrqg/image/upload/v1635361852/Pro%20Fitness/trainer/IMG-20211025-WA0028-removebg-preview_thrns4.png'
+        img: 'https://res.cloudinary.com/defmmlrqg/image/upload/c_crop,h_560,w_417/v1635361852/Pro%20Fitness/trainer/IMG-20211025-WA0028-removebg-preview_thrns4.png'
       },
       {
         name: 'Michelle',
