@@ -26,7 +26,7 @@
         </div>
         <div class="mt-24 grid grid-cols-12 gap-8 lg:(mt-12) xl:mt-0 xl:col-span-2">
           <div class="col-span-12 md:(col-span-3)">
-            <h3 class="text-lg font-semibold text-gray-200 tracking-wider uppercase">
+            <h3 class="text-xl font-semibold text-gray-200 tracking-wider uppercase">
               About
             </h3>
             <ul role="list" class="mt-4 space-y-4">
@@ -56,7 +56,7 @@
             </ul>
           </div>
           <div class="mt-4 md:mt-0 col-span-12 md:(col-span-3)">
-            <h3 class="text-lg font-semibold text-gray-200 tracking-wider uppercase">
+            <h3 class="text-xl font-semibold text-gray-200 tracking-wider uppercase">
               Facilities
             </h3>
             <ul role="list" class="mt-4 space-y-4">
@@ -86,7 +86,7 @@
             </ul>
           </div>
           <div class="mt-4 md:mt-0 col-span-12 md:(col-span-6)">
-            <h3 class="text-lg font-semibold text-gray-200 tracking-wider uppercase">
+            <h3 class="text-xl font-semibold text-gray-200 tracking-wider uppercase">
               Contact
             </h3>
             <ul role="list" class="mt-4 space-y-4">

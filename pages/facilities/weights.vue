@@ -85,7 +85,7 @@
 
 }
 .cardio{
-background-image: url('https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_900/v1633427329/Pro%20Fitness/_SAM2536_vgz0ub.jpg');
+background-image: url('https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_900/v1639984107/Pro%20Fitness/squat_r84xyc.jpg');
 }
 .functional{
 background-image: url('https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_900/v1633427425/Pro%20Fitness/_SAM2431_v7xo6p.jpg');

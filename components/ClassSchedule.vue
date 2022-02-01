@@ -14,7 +14,7 @@
           with {{ eClass.trainer }}
         </h4>
         <!-- <p class="text-sm mt-4">{{ eClass.desc }}</p> -->
-        <p class="text-sm mt-4 pb-3">
+        <p class="text-sm mt-4 pb-3 text-gray-500">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, magnam corrupti consectetur quibusdam porro nostrum ex! Nihil illum ea sapiente dolorum iste provident laborum maxime maiores iusto vel. Ducimus, sint.
         </p>
       </div>
