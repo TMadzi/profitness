@@ -31,6 +31,6 @@ export default {
       color2="text-primary"
       color1="text-gray-700"
     />
-    <ClassSchedule class="mt-8" />
+    <ClassSchedule class="md:(mt-8)" />
   </div>
 </template>

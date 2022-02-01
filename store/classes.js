@@ -13,7 +13,7 @@ export const useClasses = defineStore('classes', {
       { id: 7, class: '', trainer: '', desc: '', session: 2, trainerImg: '' },
       { id: 8, class: '', trainer: '', desc: '', session: 3, trainerImg: '' },
       { id: 9, class: '', trainer: '', desc: '', session: 4, trainerImg: '' },
-      { id: 10, class: 'Fighting Fit', trainer: 'Tendai', desc: '', session: 5, trainerImg: '' },
+      { id: 10, class: 'Step', trainer: 'Tendai', desc: '', session: 5, trainerImg: '' },
       { id: 11, class: '', trainer: '', desc: '', session: 1, trainerImg: '' },
       { id: 12, class: 'Basic X-Train', trainer: 'Doug', desc: '', session: 2, trainerImg: '' },
       { id: 13, class: '', trainer: '', desc: '', session: 3, trainerImg: '' },
