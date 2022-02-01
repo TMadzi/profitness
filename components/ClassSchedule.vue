@@ -6,15 +6,15 @@
         {{ day.long }}
       </h2>
       <div v-for="eClass in classesStore.getDaysClasses(index)" :key="eClass.id" class=" text-gray-700 tracking-wide pt-2 pb-4 px-8 border-b border-gray-1  00 last:border-none">
-        <h4 class="mt-2">{{classesStore.getStartTimeBySessionId(eClass.session).hour+':'+classesStore.getStartTimeBySessionId(eClass.session).min+classesStore.getStartTimeBySessionId(eClass.session).suffix}}</h4>
-        <h3 class="text-2xl uppercase font-medium">
+        <h4 class="">{{classesStore.getStartTimeBySessionId(eClass.session).hour+':'+classesStore.getStartTimeBySessionId(eClass.session).min+classesStore.getStartTimeBySessionId(eClass.session).suffix}}</h4>
+        <h3 class="text-2xl uppercase font-bold">
           {{ eClass.class }}
         </h3>
         <h4 class="text-md">
           with {{ eClass.trainer }}
         </h4>
         <!-- <p class="text-sm mt-4">{{ eClass.desc }}</p> -->
-        <p class="text-sm mt-4">
+        <p class="text-sm mt-4 pb-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, magnam corrupti consectetur quibusdam porro nostrum ex! Nihil illum ea sapiente dolorum iste provident laborum maxime maiores iusto vel. Ducimus, sint.
         </p>
       </div>
