@@ -1,7 +1,7 @@
 <template>
   <div class="">
-    <PageHeader class="header-img" height="h-96 bg-right hidden  lg:(block h-home-img bg-right-top)" is-home img="https://www.samlevysvillage.com/wp-content/uploads/2015/09/Pro-fitness-Health-Club-1.jpg" />
-    <img src="https://www.samlevysvillage.com/wp-content/uploads/2015/09/Pro-fitness-Health-Club-1.jpg" alt="Profitness Outside" class="mt-12 md:(hidden)">
+    <PageHeader class="header-img" height="h-96 bg-right hidden  lg:(block h-home-img bg-right-top)" is-home img="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_1600/v1643784945/Pro%20Fitness/Pro-fitness-Health-Club-1_hlywud.jpg" />
+    <img src="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_900/v1643784945/Pro%20Fitness/Pro-fitness-Health-Club-1_hlywud.jpg" alt="Profitness Outside" class="mt-12 md:(hidden)">
     <UpcomingClasses />
     <SectionTitle
       class="mt-4 px-8"

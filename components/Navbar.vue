@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full ">
+  <div class="w-full 2xl:w-2/3 ">
     <TopBanner />
     <nav
-      class="flex fixed flex-direction-row w-full  top-0  items-center justify-between px-4 h-16 bg-white text-gray-700 z-10 shadow-xl md:(px-8 top-10) lg:(px-28) 2xl:(w-3/4)"
+      class="flex fixed flex-direction-row w-full  top-0  items-center justify-between px-4 h-16 bg-white text-gray-700 z-10 shadow-xl md:(px-8 top-10) lg:(px-28) 2xl:w-2/3"
     >
       <div class="flex flex-row  gap-x-4  items-center">
         <nuxt-link to="/" class="h-12 bg-white rounded-full md:(h-24 mt-16) ">
@@ -111,7 +111,7 @@
             </nuxt-link>
           </li>
           <li @click="drawer">
-            <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-150 hover:(bg-primary text-white)" to="/">
+            <nuxt-link class="p-4 flex font-bold text-xl text-primary transition ease duration-150 hover:(bg-primary text-white)" to="/contact">
               Contact Us
             </nuxt-link>
           </li>

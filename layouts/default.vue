@@ -1,6 +1,6 @@
 <template>
 <div class="bg-purple-100">
-    <div class="w-full bg-white overflow-x-hidden mx-auto 2xl:(w-3/4)">
+    <div class="w-full bg-white overflow-x-hidden mx-auto 2xl:(w-2/3)">
         <Navbar />
         <Nuxt />
         <Footer />
