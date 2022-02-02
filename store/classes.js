@@ -38,26 +38,25 @@ export const useClasses = defineStore('classes', {
   }),
   getters: {
     upcomingClasses (state) {
-      const time = new Date().getTime()
+      const time = new Date().getHours()
       let timeSlot = 0
-      const hourInMilli = 3600
       switch (time) {
-        case time < 6 * hourInMilli:
+        case time < 6 :
           timeSlot = 0
           break
-        case time > 6 * hourInMilli && time < 7.5 * hourInMilli:
+        case time > 6 && time < 7.5 :
           timeSlot = 1
           break
-        case time > 7.5 * hourInMilli && time < 8 * hourInMilli:
+        case time > 7.5 && time < 8 :
           timeSlot = 2
           break
-        case time > 8 * hourInMilli && time < 9.25 * hourInMilli:
+        case time > 8 && time < 9.25 :
           timeSlot = 3
           break
-        case time > 9.25 * hourInMilli && time < 17.5 * hourInMilli:
+        case time > 9.25 && time < 17.5 :
           timeSlot = 4
           break
-        case time > 17.5 * hourInMilli:
+        case time > 17.5 :
           timeSlot = 5
       }
       // if (new Date().getDay() < 2) {

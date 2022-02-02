@@ -22,35 +22,27 @@ export default Vue.extend({
                 img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528307/Pro%20Fitness/staff/photo_2021-11-03_08-34-15-removebg-preview_hwghd6.png"
             },
                         {
-                name: "Munya",
-                img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528304/Pro%20Fitness/staff/photo_2021-11-03_08-35-15-removebg-preview_fafvum.png"
-            },
-                        {
                 name: "Tatenda",
                 img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528305/Pro%20Fitness/staff/photo_2021-11-03_08-34-56-removebg-preview_df4pb3.png"
             },
                         {
-                name: "Nicole",
-                img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528304/Pro%20Fitness/staff/photo_2021-11-03_08-35-00-removebg-preview_zuxxdv.png"
-            },
-                        {
-                name: "James",
+                name: "Willard",
                 img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528305/Pro%20Fitness/staff/photo_2021-11-03_08-34-45-removebg-preview_wc3wze.png"
             },
                         {
-                name: "Janice",
+                name: "Delight",
                 img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528306/Pro%20Fitness/staff/photo_2021-11-03_08-34-33-removebg-preview_zulgxs.png"
             },
                         {
-                name: "Peter",
+                name: "Tawanda",
                 img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528305/Pro%20Fitness/staff/photo_2021-11-03_08-34-37-removebg-preview_qlg9s7.png"
             },
                         {
-                name: "James",
+                name: "Nelson",
                 img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528306/Pro%20Fitness/staff/photo_2021-11-03_08-34-40-removebg-preview_zot0fz.png"
             },
                         {
-                name: "Janice",
+                name: "Delight",
                 img: "https://res.cloudinary.com/defmmlrqg/image/upload/v1636528305/Pro%20Fitness/staff/photo_2021-11-03_08-34-52-removebg-preview_rhmcz6.png"
             },
                         {

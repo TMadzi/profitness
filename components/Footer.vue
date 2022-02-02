@@ -95,19 +95,19 @@
                 </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/" class="text-base text-gray-300 hover:text-white">
+                <a href="tel:+2638600123456" class="text-base text-gray-300 hover:text-white">
                   +2638600 123 456
-                </nuxt-link>
+                </a>
               </li>
               <li>
-                <nuxt-link to="/" class="text-base text-gray-300 hover:text-white">
+                <a href="/" class="text-base text-gray-300 hover:text-white">
                   info@pro-fitness.co.zw
-                </nuxt-link>
+                </a>
               </li>
               <li>
-                <nuxt-link to="/" class="text-base text-gray-300 hover:text-white">
+                <div to="/" class="text-base text-gray-300 ">
                   Shop No: SLEC 92, <br>Sam Levy's Village, <br> Harare
-                </nuxt-link>
+                </div>
               </li>
             </ul>
           </div>

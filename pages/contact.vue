@@ -1,9 +1,28 @@
 <template>
   <div class="mt-24 md:(mt-36)">
     <div class="grid grid-cols-12 px-4 py-8 text-center md:(px-24)">
+    <div class="col-span-12 col-span-4">
       <h1 class="col-span-12 text-primary font-bold text-5xl uppercase md:( text-7xl col-span-4 text-left)">
         Contact Us
       </h1>
+      <div class="contact-info hidden text-left gap-4 pt-8 md:(flex flex-col)">
+           
+                <a href="tel:+2638600123456" class="text-base text-gray-500">
+                  +2638600 123 456
+                </a>
+              
+              
+                <a href="/" class="text-base text-gray-500">
+                  info@pro-fitness.co.zw
+                </a>
+              
+              
+                <div to="/" class="text-base text-gray-500 ">
+                  Shop No: SLEC 92, Sam Levy's Village, Harare
+                </div>
+              
+      </div>
+    </div>
       <div class="mt-12 col-span-12 md:(col-span-8 mt-0)">
         <form data-netlify="true" netlify-honeypot="bot-field" name="contact" method="POST" class="grid grid-cols-1 px-8 text-center gap-y-4 sm:grid-cols-2 sm:gap-x-8 md:(text-left gap-8)">
           <div>
