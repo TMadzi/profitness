@@ -5,23 +5,28 @@
         Contact Us
       </h1>
       <div class="mt-12">
-        <form action="#" method="POST" class="grid grid-cols-1 px-8 text-center gap-y-4 sm:grid-cols-2 sm:gap-x-8">
+        <form data-netlify="true" netlify-honeypot="bot-field" name="contact" method="POST" class="grid grid-cols-1 px-8 text-center gap-y-4 sm:grid-cols-2 sm:gap-x-8">
           <div>
+                <p class="hidden">
+    <label>
+      Don’t fill this out if you’re human: <input name="bot-field" />
+    </label>
+  </p>
             <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
             <div class="mt-1">
-              <input id="first-name" type="text" name="first-name" autocomplete="given-name" class="py-3 px-4 block w-full border-b  border-primary rounded-md">
+              <input id="first-name" type="text" name="first-name" autocomplete="given-name" class="py-3 px-4 block w-full border-b  border-primary text-center rounded-md">
             </div>
           </div>
           <div>
             <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
             <div class="mt-1">
-              <input id="last-name" type="text" name="last-name" autocomplete="family-name" class="py-3 px-4 block w-full border-b  border-primary rounded-md">
+              <input id="last-name" type="text" name="last-name" autocomplete="family-name" class="py-3 px-4 block w-full border-b  border-primary text-center rounded-md">
             </div>
           </div>
           <div class="sm:col-span-2">
             <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
             <div class="mt-1">
-              <input id="email" name="email" type="email" autocomplete="email" class="py-3 px-4 block w-full border-b  border-primary rounded-md">
+              <input id="email" name="email" type="email" autocomplete="email" class="py-3 px-4 block w-full border-b  border-primary text-center rounded-md">
             </div>
           </div>
           <div class="sm:col-span-2">
@@ -32,7 +37,7 @@
                 type="text"
                 name="phone-number"
                 autocomplete="tel"
-                class="py-3 px-4 block w-full pl-20 border-b  border-primary rounded-md"
+                class="py-3 px-4 block w-full border-b  border-primary text-center rounded-md"
                 placeholder=""
               >
             </div>
@@ -40,7 +45,7 @@
           <div class="sm:col-span-2">
             <label for="message" class="block text-sm font-medium text-gray-700 mb-8">Message</label>
             <div class="mt-1">
-              <textarea id="message" name="message" rows="4" class="py-3 px-4 block w-full border border-primary rounded-md" />
+              <textarea id="message" name="message" rows="4" class="py-3 px-4 block w-full border border-primary text-center rounded-md" />
             </div>
           </div>
           <div class="sm:col-span-2">
