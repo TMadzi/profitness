@@ -2,10 +2,12 @@
   <div class="pb-16">
     <div class="relative">
       <PageHeader class="bg-top" height="h-72 lg:(h-small-img)" pos="bg-top" img="https://res.cloudinary.com/defmmlrqg/image/upload/c_scale,w_1800/v1633426850/Pro%20Fitness/_SAM2568_2_xi6obn.jpg" />
-             <div class="bg-black absolute top-0 opacity-60 w-full h-full flex flex-col items-center justify-center">
-            <h1 class="relative text-white flex  align-bottom justify-center  text-8xl  text-center font-bold md:(text-9xl leading-44 px-16 justify-center) tracking-wide w-full opacity-90">TRAINERS</h1>
-             </div>
-        </div>
+      <div class="bg-black absolute top-0 opacity-60 w-full h-full flex flex-col items-center justify-center">
+        <h1 class="relative text-white flex  align-bottom justify-center  text-8xl  text-center font-bold md:(text-9xl leading-44 px-16 justify-center) tracking-wide w-full opacity-90">
+          TRAINERS
+        </h1>
+      </div>
+    </div>
     <MainText
       class="col-span-12 px-4 lg:(col-span-6 pt-12 px-32)"
       text1="A personal trainer is a health professional that can help you in all aspects of your fitness and exercise. Our personal trainers are equipped to help you in all phases of your fitness journey; from a novice first entering the gym, to an advanced athlete getting ready to perform at the highest level."
@@ -44,6 +46,10 @@ export default Vue.extend({
         img: 'https://res.cloudinary.com/defmmlrqg/image/upload/v1636528306/Pro%20Fitness/staff/photo_2021-11-03_08-34-22-removebg-preview_fiy5d7.png'
       },
       {
+        name: 'Mikey',
+        img: 'https://res.cloudinary.com/defmmlrqg/image/upload/v1643887592/Pro%20Fitness/trainer/mikey_tzrdyf.png'
+      },
+      {
         name: 'Zu',
         img: 'https://res.cloudinary.com/defmmlrqg/image/upload/v1636528306/Pro%20Fitness/staff/photo_2021-11-03_08-34-29-removebg-preview_r3bnch.png'
       },
@@ -54,6 +60,10 @@ export default Vue.extend({
       {
         name: 'Mugo',
         img: 'https://res.cloudinary.com/defmmlrqg/image/upload/v1636528304/Pro%20Fitness/staff/photo_2021-11-03_08-35-07-removebg-preview_notjkc.png'
+      },
+      {
+        name: 'Reinette',
+        img: 'https://res.cloudinary.com/defmmlrqg/image/upload/v1643887592/Pro%20Fitness/trainer/reinette_pan37e.png'
       },
       {
         name: 'Dagmawi',
